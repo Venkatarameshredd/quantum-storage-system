@@ -1,0 +1,80 @@
+<mxfile host="Electron" modified="2026-09-07T14:45:00.000Z" agent="Mozilla/5.0" version="21.6.8" type="device">
+  <diagram id="empirical_results_calm" name="Empirical Evaluation">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="1">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Master Title Frame -->
+        <mxCell id="master_frame" value="Fig. 7: Empirical Performance Evaluation, Scalability, and DoS Mitigation Architecture" style="swimlane;fontFamily=Helvetica;fontSize=13;fontStyle=1;startSize=28;fillColor=#2B4C6F;strokeColor=#1E3A5F;fontColor=#FFFFFF;rounded=1;arcSize=3;" vertex="1" parent="1">
+          <mxGeometry x="20" y="20" width="940" height="640" as="geometry"/>
+        </mxCell>
+
+        <!-- Panel A -->
+        <mxCell id="panel_a" value="(a) Cryptographic Pipeline Latency Breakdown (1 MB)" style="swimlane;fontFamily=Helvetica;fontSize=11;fontStyle=1;startSize=25;fillColor=#2B4C6F;strokeColor=#1E3A5F;fontColor=#FFFFFF;rounded=1;" vertex="1" parent="master_frame">
+          <mxGeometry x="15" y="38" width="440" height="282" as="geometry"/>
+        </mxCell>
+        <mxCell id="bar_rsa" value="RSA-3072&#xa;7.88 ms" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B85C50;fontColor=#FFFFFF;strokeColor=#8E3B30;fontFamily=Helvetica;fontSize=9.5;fontStyle=1;" vertex="1" parent="panel_a">
+          <mxGeometry x="40" y="60" width="70" height="175" as="geometry"/>
+        </mxCell>
+        <mxCell id="bar_ecc" value="ECC-256&#xa;1.88 ms" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C98A4B;fontColor=#FFFFFF;strokeColor=#9E642E;fontFamily=Helvetica;fontSize=9.5;fontStyle=1;" vertex="1" parent="panel_a">
+          <mxGeometry x="135" y="193" width="70" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="bar_kyb" value="Kyber-512&#xa;0.09 ms" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4A7C59;fontColor=#FFFFFF;strokeColor=#335A3F;fontFamily=Helvetica;fontSize=9.5;fontStyle=1;" vertex="1" parent="panel_a">
+          <mxGeometry x="230" y="225" width="70" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="bar_hyb" value="Proposed&#xa;1.28 ms" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#3A6B88;fontColor=#FFFFFF;strokeColor=#254A60;fontFamily=Helvetica;fontSize=9.5;fontStyle=1;" vertex="1" parent="panel_a">
+          <mxGeometry x="325" y="206" width="70" height="29" as="geometry"/>
+        </mxCell>
+        <mxCell id="badge_rsa" value="6.15x Faster than RSA&#xa;Dual Classical + Post-Quantum Safety" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F1F5F9;fontColor=#1E293B;strokeColor=#94A3B8;fontFamily=Helvetica;fontSize=8.5;fontStyle=1;" vertex="1" parent="panel_a">
+          <mxGeometry x="240" y="60" width="170" height="45" as="geometry"/>
+        </mxCell>
+
+        <!-- Panel B -->
+        <mxCell id="panel_b" value="(b) Payload Scaling &amp; AEDE Dynamic Offloading (τ = 5 MB)" style="swimlane;fontFamily=Helvetica;fontSize=11;fontStyle=1;startSize=25;fillColor=#3B6978;strokeColor=#2B515E;fontColor=#FFFFFF;rounded=1;" vertex="1" parent="master_frame">
+          <mxGeometry x="480" y="38" width="440" height="282" as="geometry"/>
+        </mxCell>
+        <mxCell id="zone_hybrid" value="ZONE 1: Sub-5MB Dual Hybrid (ECC + Kyber)&#xa;Maximum Security Guarantee" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0F5F2;fontColor=#335A3F;strokeColor=#BFD9C7;fontFamily=Helvetica;fontSize=9;fontStyle=1;align=center;" vertex="1" parent="panel_b">
+          <mxGeometry x="20" y="45" width="180" height="180" as="geometry"/>
+        </mxCell>
+        <mxCell id="zone_fallback" value="ZONE 2: Fallback Kyber Offload&#xa;93.0% Compute Savings at 10 MB" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F9F6F0;fontColor=#7D5A2E;strokeColor=#E2D7C3;fontFamily=Helvetica;fontSize=9;fontStyle=1;align=center;" vertex="1" parent="panel_b">
+          <mxGeometry x="220" y="45" width="200" height="180" as="geometry"/>
+        </mxCell>
+        <mxCell id="tau_line" value="Threshold τ = 5 MB" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#3B6978;fontColor=#FFFFFF;strokeColor=#2B515E;fontFamily=Helvetica;fontSize=8.5;fontStyle=1;" vertex="1" parent="panel_b">
+          <mxGeometry x="155" y="235" width="110" height="25" as="geometry"/>
+        </mxCell>
+
+        <!-- Panel C -->
+        <mxCell id="panel_c" value="(c) DoS Authentication Rejection: Early-Drop vs Conventional" style="swimlane;fontFamily=Helvetica;fontSize=11;fontStyle=1;startSize=25;fillColor=#475569;strokeColor=#334155;fontColor=#FFFFFF;rounded=1;" vertex="1" parent="master_frame">
+          <mxGeometry x="15" y="338" width="440" height="282" as="geometry"/>
+        </mxCell>
+        <mxCell id="conv_dos" value="Conventional Reconstruct:&#xa;1. Read Header Fragment&#xa;2. Fetch DB Fragment&#xa;3. Shamir Secret Reconstruct&#xa;4. Kyber Decapsulation&#xa;5. Inner AES-GCM Tag Verify&#xa;&#xa;Latency: 1.280 ms / req" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDF7F7;fontColor=#6B3333;strokeColor=#E2C4C4;fontFamily=Helvetica;fontSize=8.5;align=left;spacingLeft=10;" vertex="1" parent="panel_c">
+          <mxGeometry x="20" y="45" width="185" height="135" as="geometry"/>
+        </mxCell>
+        <mxCell id="early_dos" value="Proposed Early-Drop HMAC:&#xa;1. Edge Ingestion Gate&#xa;2. Outer HMAC Fast Verify&#xa;   (Bypasses DB &amp; Lattice KEM)&#xa;3. Constant-Time Rejection&#xa;&#xa;Latency: 0.012 ms / req" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F4F8F5;fontColor=#22422C;strokeColor=#BFD9C7;fontFamily=Helvetica;fontSize=8.5;align=left;spacingLeft=10;fontStyle=1;" vertex="1" parent="panel_c">
+          <mxGeometry x="235" y="45" width="185" height="135" as="geometry"/>
+        </mxCell>
+        <mxCell id="speedup_badge" value="✓ 106x Threat Rejection Speedup (99.06% CPU Overhead Saved)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F1F5F9;fontColor=#1E293B;strokeColor=#94A3B8;strokeWidth=1.2;fontFamily=Helvetica;fontSize=9.5;fontStyle=1;align=center;" vertex="1" parent="panel_c">
+          <mxGeometry x="20" y="200" width="400" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- Panel D -->
+        <mxCell id="panel_d" value="(d) Enterprise Workload Latency Optimization Across Profiles" style="swimlane;fontFamily=Helvetica;fontSize=11;fontStyle=1;startSize=25;fillColor=#334E68;strokeColor=#243B53;fontColor=#FFFFFF;rounded=1;" vertex="1" parent="master_frame">
+          <mxGeometry x="480" y="338" width="440" height="282" as="geometry"/>
+        </mxCell>
+        <mxCell id="p_a_box" value="Profile A (General)&#xa;Baseline: 1.41 ms&#xa;Adaptive: 1.31 ms&#xa;&#xa;Savings: -6.88%" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F1F5F9;fontColor=#243B53;strokeColor=#94A3B8;fontFamily=Helvetica;fontSize=9;align=center;fontStyle=1;" vertex="1" parent="panel_d">
+          <mxGeometry x="25" y="55" width="115" height="130" as="geometry"/>
+        </mxCell>
+        <mxCell id="p_b_box" value="Profile B (FinTech)&#xa;Baseline: 3.20 ms&#xa;Adaptive: 1.46 ms&#xa;&#xa;Savings: -54.38%" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F4F8F5;fontColor=#22422C;strokeColor=#BFD9C7;fontFamily=Helvetica;fontSize=9;align=center;fontStyle=1;" vertex="1" parent="panel_d">
+          <mxGeometry x="160" y="55" width="120" height="130" as="geometry"/>
+        </mxCell>
+        <mxCell id="p_c_box" value="Profile C (Defense)&#xa;Baseline: 4.97 ms&#xa;Adaptive: 1.60 ms&#xa;&#xa;Savings: -67.81%" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8F5F9;fontColor=#4C3D73;strokeColor=#D5CBE2;fontFamily=Helvetica;fontSize=9;align=center;fontStyle=1;" vertex="1" parent="panel_d">
+          <mxGeometry x="300" y="55" width="115" height="130" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend_box" value="■ Static Baseline (Muted Grey)   ■ Proposed Adaptive Hybrid Engine (Calm Accent)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FBFBFC;fontColor=#334155;strokeColor=#CBD5E1;fontFamily=Helvetica;fontSize=8.5;align=center;" vertex="1" parent="panel_d">
+          <mxGeometry x="25" y="215" width="390" height="35" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

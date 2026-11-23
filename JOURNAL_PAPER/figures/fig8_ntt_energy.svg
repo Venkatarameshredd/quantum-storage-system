@@ -1,0 +1,215 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 620" width="960" height="620">
+  <defs>
+    <filter id="soft-shadow" x="-2%" y="-2%" width="104%" height="106%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#1E293B" flood-opacity="0.07"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#475569"/>
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#2B5B84"/>
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#2E7D5B"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="960" height="620" fill="#F8FAFC"/>
+  
+  <!-- Outer Border Container -->
+  <rect x="14" y="14" width="932" height="592" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2" filter="url(#soft-shadow)"/>
+
+  <!-- ========================================================================= -->
+  <!-- SUBPANEL (a): Micro-Architectural NTT Polynomial Multiplication Pipeline  -->
+  <!-- ========================================================================= -->
+  <g id="subpanel-a">
+    <rect x="28" y="26" width="446" height="568" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2"/>
+    <rect x="28" y="26" width="446" height="34" rx="6" fill="#2B4C6F"/>
+    <rect x="28" y="48" width="446" height="12" fill="#2B4C6F"/>
+    <text x="42" y="48" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF">(a) Vectorized NTT Butterfly Pipeline &amp; Cycle Breakdown</text>
+
+    <!-- Step 1: Input Polynomial -->
+    <rect x="44" y="74" width="414" height="48" rx="5" fill="#F1F5F9" stroke="#94A3B8" stroke-width="1.2"/>
+    <text x="56" y="93" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#1E293B">Input Polynomial Vector: a(X), b(X) ∈ R_q</text>
+    <text x="56" y="109" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="9.5" fill="#475569">Ring R_q = Z_3329[X]/(X^256 + 1) | 256 coefficients in [-1664, 1664]</text>
+
+    <!-- Arrow Down -->
+    <line x1="251" y1="122" x2="251" y2="138" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+    <!-- Step 2: Forward NTT 7 Butterfly Stages -->
+    <rect x="44" y="140" width="414" height="74" rx="5" fill="#F0F9FF" stroke="#38BDF8" stroke-width="1.2"/>
+    <text x="56" y="160" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#0369A1">Forward NTT Transform (7 Butterfly Stages)</text>
+    <rect x="338" y="146" width="110" height="20" rx="4" fill="#0284C7"/>
+    <text x="393" y="160" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="bold" fill="#FFFFFF">18.4% (3,420 cyc)</text>
+    <text x="56" y="178" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="9.5" fill="#0C4A6E">Bit-reversal indexing: rev_7(i) | Twiddle factors: ζ^(2·rev_7(i)+1) mod 3329</text>
+    <text x="56" y="196" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="9.5" fill="#0284C7">AVX2 Vectorization: 16 coefficients computed in parallel per SIMD register</text>
+
+    <!-- Arrow Down -->
+    <line x1="251" y1="214" x2="251" y2="228" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+    <!-- Step 3: Point-wise Multiplication & Modular Reduction -->
+    <rect x="44" y="230" width="414" height="74" rx="5" fill="#FEFCE8" stroke="#EAB308" stroke-width="1.2"/>
+    <text x="56" y="250" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#854D0E">Point-wise Degree-1 Modular Multiplication</text>
+    <rect x="344" y="236" width="104" height="20" rx="4" fill="#CA8A04"/>
+    <text x="396" y="250" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="bold" fill="#FFFFFF">8.2% (1,530 cyc)</text>
+    <text x="56" y="269" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="9.5" fill="#713F12">128 independent quadratic products: c_2i + c_2i+1·X</text>
+    <text x="56" y="287" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="9.5" fill="#A16207">Constant-time Montgomery Reduction: R = 2^16 mod 3329 = 2285</text>
+
+    <!-- Arrow Down -->
+    <line x1="251" y1="304" x2="251" y2="316" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+    <!-- Step 4: Inverse NTT Transform -->
+    <rect x="44" y="318" width="414" height="72" rx="5" fill="#F0FDF4" stroke="#4ADE80" stroke-width="1.2"/>
+    <text x="56" y="338" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#166534">Inverse NTT Transform &amp; Barrett Scaling</text>
+    <rect x="338" y="324" width="110" height="20" rx="4" fill="#16A34A"/>
+    <text x="393" y="338" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="bold" fill="#FFFFFF">19.1% (3,550 cyc)</text>
+    <text x="56" y="357" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="9.5" fill="#14532D">Inverse Cooley-Tukey butterflies | Normalization factor: 256^(-1) mod 3329 = 3316</text>
+    <text x="56" y="375" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="9.5" fill="#15803D">Constant-time Barrett reduction eliminates timing side-channel leakage</text>
+
+    <!-- Arrow Down -->
+    <line x1="251" y1="390" x2="251" y2="400" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+    <!-- Step 5: Centered Binomial Noise Sampling -->
+    <rect x="44" y="402" width="414" height="72" rx="5" fill="#FFF1F2" stroke="#FB7185" stroke-width="1.2"/>
+    <text x="56" y="422" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#9F1239">Centered Binomial Distribution Sampling (CBD)</text>
+    <rect x="338" y="408" width="110" height="20" rx="4" fill="#E11D48"/>
+    <text x="393" y="422" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="bold" fill="#FFFFFF">32.5% (6,040 cyc)</text>
+    <text x="56" y="441" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="9.5" fill="#881337">Pseudorandom noise generation: η_1=3, η_2=2 via SHAKE-256 PRF stream</text>
+    <text x="56" y="459" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="9.5" fill="#BE123C">AVX2 vectorized population-count: 2.4× speedup over serial implementation</text>
+
+    <!-- Cycle Breakdown Bar Chart at Bottom of Panel A -->
+    <rect x="44" y="482" width="414" height="98" rx="5" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+    <text x="56" y="500" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="10" font-weight="bold" fill="#334155">Execution Cycle Budget Distribution (Total: 18,600 CPU Cycles)</text>
+    
+    <!-- Stacked Bar -->
+    <g transform="translate(56, 508)">
+      <rect x="0" y="0" width="72" height="22" fill="#0284C7" rx="2"/>
+      <text x="18" y="15" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="bold" fill="#FFFFFF">18.4%</text>
+
+      <rect x="73" y="0" width="32" height="22" fill="#CA8A04" rx="2"/>
+      <text x="76" y="15" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="8.5" font-weight="bold" fill="#FFFFFF">8%</text>
+
+      <rect x="106" y="0" width="75" height="22" fill="#16A34A" rx="2"/>
+      <text x="124" y="15" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="bold" fill="#FFFFFF">19.1%</text>
+
+      <rect x="182" y="0" width="127" height="22" fill="#E11D48" rx="2"/>
+      <text x="226" y="15" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="bold" fill="#FFFFFF">32.5% CBD Noise</text>
+
+      <rect x="310" y="0" width="80" height="22" fill="#64748B" rx="2"/>
+      <text x="328" y="15" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="8.5" font-weight="bold" fill="#FFFFFF">21.8% Other</text>
+    </g>
+
+    <!-- Legend -->
+    <circle cx="62" cy="544" r="4" fill="#0284C7"/>
+    <text x="70" y="547" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="8.5" fill="#475569">Forward NTT</text>
+    <circle cx="140" cy="544" r="4" fill="#CA8A04"/>
+    <text x="148" y="547" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="8.5" fill="#475569">Pointwise</text>
+    <circle cx="204" cy="544" r="4" fill="#16A34A"/>
+    <text x="212" y="547" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="8.5" fill="#475569">Inv NTT</text>
+    <circle cx="266" cy="544" r="4" fill="#E11D48"/>
+    <text x="274" y="547" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="8.5" fill="#475569">CBD Noise</text>
+    <circle cx="340" cy="544" r="4" fill="#64748B"/>
+    <text x="348" y="547" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="8.5" fill="#475569">KDF / Control</text>
+    <text x="56" y="567" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="8.5" font-style="italic" fill="#64748B">Benchmarked on Intel Core i7-11800H via Intel VTune Profiler (AVX2 Enabled).</text>
+  </g>
+
+  <!-- ========================================================================= -->
+  <!-- SUBPANEL (b): Energy Footprint and Instruction Efficiency Dynamics         -->
+  <!-- ========================================================================= -->
+  <g id="subpanel-b">
+    <rect x="486" y="26" width="446" height="568" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2"/>
+    <rect x="486" y="26" width="446" height="34" rx="6" fill="#2E7D5B"/>
+    <rect x="486" y="48" width="446" height="12" fill="#2E7D5B"/>
+    <text x="500" y="48" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF">(b) Hardware Energy Footprint &amp; Instruction Pipeline Efficiency (IPC)</text>
+
+    <!-- Top Half: Energy Bar Chart -->
+    <rect x="502" y="74" width="414" height="236" rx="5" fill="#FBFBFC" stroke="#CBD5E1" stroke-width="1"/>
+    <text x="516" y="93" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#1E293B">Total Energy Consumption per Operation (mJ/op)</text>
+    <text x="516" y="107" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="8.8" fill="#64748B">Intel RAPL Hardware Performance Counters (10,000 Operations Sampled)</text>
+
+    <!-- Bar Chart Grid Lines (0 to 25 mJ scale) -->
+    <line x1="562" y1="130" x2="895" y2="130" stroke="#E2E8F0" stroke-width="1"/>
+    <line x1="562" y1="161" x2="895" y2="161" stroke="#E2E8F0" stroke-width="1"/>
+    <line x1="562" y1="192" x2="895" y2="192" stroke="#E2E8F0" stroke-width="1"/>
+    <line x1="562" y1="223" x2="895" y2="223" stroke="#E2E8F0" stroke-width="1"/>
+    <line x1="562" y1="254" x2="895" y2="254" stroke="#E2E8F0" stroke-width="1"/>
+    <line x1="562" y1="285" x2="895" y2="285" stroke="#94A3B8" stroke-width="1.2"/>
+
+    <!-- Y-Axis Labels -->
+    <text x="554" y="133" text-anchor="end" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="8.8" fill="#64748B">25 mJ</text>
+    <text x="554" y="164" text-anchor="end" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="8.8" fill="#64748B">20 mJ</text>
+    <text x="554" y="195" text-anchor="end" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="8.8" fill="#64748B">15 mJ</text>
+    <text x="554" y="226" text-anchor="end" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="8.8" fill="#64748B">10 mJ</text>
+    <text x="554" y="257" text-anchor="end" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="8.8" fill="#64748B">5 mJ</text>
+    <text x="554" y="288" text-anchor="end" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="8.8" fill="#64748B">0 mJ</text>
+
+    <!-- Bars: RSA-3072 -->
+    <g transform="translate(590, 0)">
+      <rect x="0" y="151" width="48" height="134" fill="#B84A39" rx="3"/>
+      <text x="24" y="142" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="bold" fill="#B84A39">21.66 mJ</text>
+      <text x="24" y="300" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="bold" fill="#334155">RSA-3072</text>
+    </g>
+
+    <!-- Bars: ECC-256 -->
+    <g transform="translate(672, 0)">
+      <rect x="0" y="254" width="48" height="31" fill="#C27D26" rx="3"/>
+      <text x="24" y="246" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="bold" fill="#C27D26">5.07 mJ</text>
+      <text x="24" y="300" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="bold" fill="#334155">ECC-256</text>
+    </g>
+
+    <!-- Bars: Kyber-512 -->
+    <g transform="translate(754, 0)">
+      <rect x="0" y="282" width="48" height="3" fill="#2E7D5B" rx="1.5"/>
+      <text x="24" y="274" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="bold" fill="#2E7D5B">0.34 mJ</text>
+      <text x="24" y="300" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="bold" fill="#334155">Kyber-512</text>
+    </g>
+
+    <!-- Bars: Proposed Hybrid -->
+    <g transform="translate(836, 0)">
+      <rect x="0" y="264" width="48" height="21" fill="#2B5B84" rx="3"/>
+      <text x="24" y="256" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="bold" fill="#2B5B84">3.38 mJ</text>
+      <text x="24" y="300" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="9" font-weight="bold" fill="#2B5B84">Proposed Hybrid</text>
+    </g>
+
+    <!-- Bottom Half: Instruction Pipeline Efficiency (IPC) and Memory -->
+    <rect x="502" y="322" width="414" height="258" rx="5" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+    <text x="516" y="342" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#1E293B">Micro-Architectural Efficiency: Instructions Per Cycle (IPC)</text>
+    <text x="516" y="356" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="8.8" fill="#64748B">Higher IPC denotes superior ALU pipeline utilization and fewer branch mispredictions</text>
+
+    <!-- IPC Comparison Row 1: RSA-3072 -->
+    <g transform="translate(516, 370)">
+      <text x="0" y="14" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="bold" fill="#334155">RSA-3072:</text>
+      <rect x="96" y="2" width="62" height="16" rx="3" fill="#CBD5E1"/>
+      <text x="166" y="14" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="8.8"><tspan font-weight="bold" fill="#475569">1.14 IPC</tspan><tspan fill="#64748B">&#160;(Multi-precision branch stalls)</tspan></text>
+    </g>
+
+    <!-- IPC Comparison Row 2: ECC-256 -->
+    <g transform="translate(516, 398)">
+      <text x="0" y="14" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="bold" fill="#334155">ECC-256:</text>
+      <rect x="96" y="2" width="88" height="16" rx="3" fill="#C27D26"/>
+      <text x="192" y="14" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="8.8"><tspan font-weight="bold" fill="#C27D26">1.62 IPC</tspan><tspan fill="#78350F">&#160;(Scalar 256-bit point ALU)</tspan></text>
+    </g>
+
+    <!-- IPC Comparison Row 3: Kyber-512 -->
+    <g transform="translate(516, 426)">
+      <text x="0" y="14" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="bold" fill="#334155">Kyber-512:</text>
+      <rect x="96" y="2" width="143" height="16" rx="3" fill="#2E7D5B"/>
+      <text x="247" y="14" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="8.8"><tspan font-weight="bold" fill="#2E7D5B">2.65 IPC</tspan><tspan fill="#14532D">&#160;(2.3× vs RSA, SIMD)</tspan></text>
+    </g>
+
+    <!-- IPC Comparison Row 4: Proposed Hybrid -->
+    <g transform="translate(516, 454)">
+      <text x="0" y="14" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="bold" fill="#2B5B84">Proposed Hybrid:</text>
+      <rect x="96" y="2" width="119" height="16" rx="3" fill="#2B5B84"/>
+      <text x="223" y="14" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="8.8"><tspan font-weight="bold" fill="#2B5B84">2.21 IPC</tspan><tspan fill="#1E3A8A">&#160;(Pipelined dual-core)</tspan></text>
+    </g>
+
+    <!-- Summary Box -->
+    <rect x="516" y="486" width="386" height="82" rx="4" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+    <text x="526" y="504" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="bold" fill="#1E40AF">Key Architectural Finding:</text>
+    <text x="526" y="522" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="8.6" fill="#1E3A8A">• Hybrid scheme consumes 84.4% less total energy (3.38 mJ vs 21.66 mJ) than RSA-3072.</text>
+    <text x="526" y="538" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="8.6" fill="#1E3A8A">• Lattice NTT polynomial operations execute with zero branch misprediction penalties.</text>
+    <text x="526" y="554" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="8.6" fill="#1E3A8A">• AVX2 SIMD parallelism maintains high 2.21 IPC throughput under multi-threaded loads.</text>
+  </g>
+</svg>

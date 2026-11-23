@@ -1,0 +1,21 @@
+{
+  "dataset_info": {
+    "title": "Quantum Storage Test Set - Protected Health Information (PHI)",
+    "records_count": 2,
+    "sensitivity": "high"
+  },
+  "records": [
+    {
+      "patient_id": "P-40912",
+      "diagnosis": "Hypertension Stage 2",
+      "treatment": "Lisinopril 10mg",
+      "quantum_protection_required": true
+    },
+    {
+      "patient_id": "P-40913",
+      "diagnosis": "Type 2 Diabetes Mellitus",
+      "treatment": "Metformin 500mg",
+      "quantum_protection_required": true
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+(* ==============================================================================
+   ProVerif 2.05 Formal Verification Model
+   Quantum-Resistant Adaptive Hybrid Cloud Storage System
+   Section 8.6: Automated Formal Symbolic Protocol Verification
+   ============================================================================== *)
+
+(* Channels *)
+free c: channel.
+free secure_db_ch: channel [private].
+
+(* Types *)
+type key.
+type pkey.
+type skey.
+type share.
+
+(* Cryptographic Primitives & Equational Theories *)
+
+(* 1. Asymmetric Classical ECDH (SECP256R1) *)
+fun pk_ecc(skey): pkey.
+fun ecdh(skey, pkey): key.
+equation forall skA: skey, skB: skey;
+    ecdh(skA, pk_ecc(skB)) = ecdh(skB, pk_ecc(skA)).
+
+(* 2. Post-Quantum Lattice KEM (CRYSTALS-Kyber / ML-KEM) *)
+fun pk_kyber(skey): pkey.
+fun kyber_encaps(pkey, bitstring): bitstring.
+fun kyber_ss(pkey, bitstring): key.
+fun kyber_decaps(skey, bitstring): key.
+equation forall sk: skey, seed: bitstring;
+    kyber_decaps(sk, kyber_encaps(pk_kyber(sk), seed)) = kyber_ss(pk_kyber(sk), seed).
+
+(* 3. Key Derivation Function (HKDF-SHA256) *)
+fun hkdf(key, key, bitstring): key.
+
+(* 4. Shamir (2,3) Secret Sharing over GF(257) *)
+fun share1(key, bitstring): share.
+fun share2(key, bitstring): share.
+fun share3(key, bitstring): share.
+fun lagrange_reconstruct(share, share): key.
+equation forall k: key, r: bitstring;
+    lagrange_reconstruct(share1(k, r), share2(k, r)) = k.
+equation forall k: key, r: bitstring;
+    lagrange_reconstruct(share1(k, r), share3(k, r)) = k.
+equation forall k: key, r: bitstring;
+    lagrange_reconstruct(share2(k, r), share3(k, r)) = k.
+
+(* 5. Outer HMAC-SHA256 & Authenticated AES-256-GCM *)
+fun hmac(key, bitstring): bitstring.
+fun aes_gcm_enc(key, bitstring, bitstring): bitstring.
+reduc forall k: key, iv: bitstring, msg: bitstring;
+    aes_gcm_dec(k, iv, aes_gcm_enc(k, iv, msg)) = msg.
+
+(* Security Events *)
+event StartServer(bitstring).
+event EndClient(bitstring).
+event ValidOuterHMAC(bitstring).
+event ReconstructKey(bitstring).
+
+(* Secret Assertions *)
+free secret_Kenc: key [private].
+free secret_Payload: bitstring [private].
+
+(* Verification Queries (Section 8.6) *)
+
+(* Query 1: Master Key Secrecy against Dolev-Yao Network Adversary *)
+query attacker(secret_Kenc).
+
+(* Query 2: Injective Mutual Agreement preventing Replay / MITM *)
+query x: bitstring; inj-event(EndClient(x)) ==> inj-event(StartServer(x)).
+
+(* Query 3: Early-Drop Invariant: Key reconstruction requires valid Outer HMAC *)
+query x: bitstring; inj-event(ReconstructKey(x)) ==> inj-event(ValidOuterHMAC(x)).
+
+(* Process Specifications *)
+
+(* Ingress Gateway Process *)
+let ServerProcess(sk_ecc_srv: skey, sk_kyb_srv: skey, K_mac: key) =
+    (* Receive client request *)
+    in(c, (pk_ecc_cli: pkey, ct_kyb_cli: bitstring, outer_mac: bitstring, hdr: bitstring, enc_share1: share, enc_body: bitstring, sess_id: bitstring));
+    
+    (* Check Outer HMAC Envelope First (Early-Drop Gate) *)
+    if outer_mac = hmac(K_mac, (hdr, pk_ecc_cli, ct_kyb_cli)) then
+    event ValidOuterHMAC(sess_id);
+    
+    (* Derive Hybrid KEM Session Key *)
+    let s_ecc = ecdh(sk_ecc_srv, pk_ecc_cli) in
+    let s_kyb = kyber_decaps(sk_kyb_srv, ct_kyb_cli) in
+    let k_hybrid = hkdf(s_ecc, s_kyb, hdr) in
+    
+    (* Retrieve Share 2 from isolated database *)
+    in(secure_db_ch, share2_db: share);
+    
+    (* Reconstruct Payload Symmetric Key via Lagrange Interpolation *)
+    let k_payload = lagrange_reconstruct(enc_share1, share2_db) in
+    event ReconstructKey(sess_id);
+    
+    event StartServer(sess_id);
+    out(c, (sess_id, aes_gcm_enc(k_payload, hdr, secret_Payload))).
+
+(* Client Process *)
+let ClientProcess(pk_ecc_srv: pkey, pk_kyb_srv: pkey, K_mac: key) =
+    new sk_ecc_cli: skey;
+    let pk_ecc_cli = pk_ecc(sk_ecc_cli) in
+    new seed_kyb: bitstring;
+    let ct_kyb = kyber_encaps(pk_kyb_srv, seed_kyb) in
+    new sess_id: bitstring;
+    new hdr: bitstring;
+    
+    let outer_mac = hmac(K_mac, (hdr, pk_ecc_cli, ct_kyb)) in
+    
+    new r_poly: bitstring;
+    let sh1 = share1(secret_Kenc, r_poly) in
+    let sh2 = share2(secret_Kenc, r_poly) in
+    
+    (* Store Share 2 in isolated database channel *)
+    out(secure_db_ch, sh2);
+    
+    (* Send payload over public network *)
+    out(c, (pk_ecc_cli, ct_kyb, outer_mac, hdr, sh1, aes_gcm_enc(secret_Kenc, hdr, secret_Payload), sess_id));
+    
+    in(c, (=sess_id, response: bitstring));
+    event EndClient(sess_id).
+
+(* Main Process Execution *)
+process
+    new sk_ecc_srv: skey;
+    new sk_kyb_srv: skey;
+    new K_mac: key;
+    let pk_ecc_srv = pk_ecc(sk_ecc_srv) in
+    let pk_kyb_srv = pk_kyber(sk_kyb_srv) in
+    out(c, (pk_ecc_srv, pk_kyb_srv));
+    ((!ServerProcess(sk_ecc_srv, sk_kyb_srv, K_mac)) | (!ClientProcess(pk_ecc_srv, pk_kyb_srv, K_mac)))

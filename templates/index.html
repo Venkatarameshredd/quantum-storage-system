@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum-Resistant Storage</title>
+    <style>
+        :root {
+            --bg-dark: #0f172a;
+            --bg-card: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #3b82f6;
+            --accent-hover: #2563eb;
+            --success: #10b981;
+            --warning: #ef4444;
+            --border: #334155;
+        }
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            margin: 0;
+            padding: 2rem;
+            line-height: 1.5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+        .card {
+            background: var(--bg-card);
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        h2 { margin-top: 0; font-size: 1.25rem; }
+        .stat-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .stat-box {
+            padding: 1rem;
+            border-radius: 4px;
+            background: rgba(0,0,0,0.2);
+        }
+        .stat-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--accent);
+        }
+        input, select, button {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+            border: 1px solid var(--border);
+            background: rgba(0,0,0,0.2);
+            color: var(--text-main);
+            box-sizing: border-box;
+        }
+        button {
+            background: var(--accent);
+            border: none;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        button:hover { background: var(--accent-hover); }
+        .table-container { margin-top: 2rem; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+        th, td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+        th { color: var(--text-muted); font-weight: 500; }
+        .action-btn {
+            padding: 0.25rem 0.75rem;
+            margin-right: 0.5rem;
+            width: auto;
+            display: inline-block;
+        }
+        .btn-danger { background: var(--warning); opacity: 0.8; }
+        .btn-danger:hover { background: var(--warning); opacity: 1; }
+        #upload-result {
+            display: none;
+            padding: 1rem;
+            background: rgba(16, 185, 129, 0.1);
+            border-left: 4px solid var(--success);
+            margin-top: 1rem;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        #download-result {
+            display: none;
+            padding: 1rem;
+            background: rgba(0,0,0,0.3);
+            margin-top: 1rem;
+            border-radius: 4px;
+            font-family: monospace;
+            word-break: break-all;
+        }
+        .anomaly-badge { color: var(--warning); font-weight: bold; }
+        .success-badge { color: var(--success); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Quantum-Resistant Storage</h1>
+            <div id="system-status" class="text-muted">Loading system status...</div>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <h2>System Overview</h2>
+                <div class="stat-grid">
+                    <div class="stat-box">
+                        <div class="stat-value" id="total-files">0</div>
+                        <div class="text-muted">Files Stored</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-value" id="total-size">0 MB</div>
+                        <div class="text-muted">Storage Used</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Upload File</h2>
+                <form id="upload-form">
+                    <label class="text-muted" style="display:block;margin-bottom:0.5rem;font-size:0.875rem;">Select File</label>
+                    <input type="file" id="file-input" required>
+                    
+                    <label class="text-muted" style="display:block;margin-bottom:0.5rem;font-size:0.875rem;">Data Sensitivity</label>
+                    <select id="sensitivity-select">
+                        <option value="low">Low (ECC Only - Classical)</option>
+                        <option value="medium">Medium (Kyber Only - Post-Quantum)</option>
+                        <option value="high" selected>High (Hybrid ECC+Kyber - Maximum Security)</option>
+                    </select>
+                    
+                    <button type="submit">Encrypt & Upload</button>
+                </form>
+                <div id="upload-result"></div>
+            </div>
+        </div>
+
+        <div class="card table-container">
+            <h2>Stored Files</h2>
+            <table id="files-table">
+                <thead>
+                    <tr>
+                        <th>Filename</th>
+                        <th>Size</th>
+                        <th>Upload Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="files-list">
+                    <!-- Files will be populated here -->
+                </tbody>
+            </table>
+            <div id="download-result"></div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('upload-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const fileInput = document.getElementById('file-input');
+            const sensitivity = document.getElementById('sensitivity-select').value;
+            
+            const formData = new FormData();
+            formData.append('file', fileInput.files[0]);
+            formData.append('sensitivity', sensitivity);
+            formData.append('user_id', 'web_user');
+
+            const btn = e.target.querySelector('button');
+            btn.textContent = 'Encrypting...';
+            btn.disabled = true;
+
+            try {
+                const response = await fetch('/api/upload', {
+                    method: 'POST',
+                    body: formData
+                });
+                const result = await response.json();
+                
+                const resultBox = document.getElementById('upload-result');
+                resultBox.style.display = 'block';
+                resultBox.innerHTML = `
+                    <strong style="color:var(--success)">Success!</strong><br>
+                    File ID: ${result.file_id}<br>
+                    Encryption Mode: <strong>${result.encryption_mode.toUpperCase()}</strong><br>
+                    Reasoning: ${result.decision.reasoning}
+                `;
+                
+                fetchFiles();
+                fetchSystemInfo();
+                e.target.reset();
+            } catch (error) {
+                alert('Upload failed: ' + error);
+            } finally {
+                btn.textContent = 'Encrypt & Upload';
+                btn.disabled = false;
+            }
+        });
+
+        async function fetchSystemInfo() {
+            try {
+                const res = await fetch('/api/system-info');
+                const data = await res.json();
+                
+                document.getElementById('total-files').textContent = data.storage.total_files;
+                document.getElementById('total-size').textContent = data.storage.total_storage_mb + ' MB';
+                
+                const statusEl = document.getElementById('system-status');
+                if (data.storage.open_anomalies > 0) {
+                    statusEl.innerHTML = `<span class="anomaly-badge">System Online • ${data.storage.open_anomalies} Anomalies Detected</span>`;
+                } else {
+                    statusEl.innerHTML = `<span class="success-badge">System Online • 0 Anomalies</span>`;
+                }
+            } catch (e) {
+                document.getElementById('system-status').textContent = 'System Offline';
+            }
+        }
+
+        async function fetchFiles() {
+            try {
+                const res = await fetch('/api/files');
+                const data = await res.json();
+                
+                const tbody = document.getElementById('files-list');
+                tbody.innerHTML = '';
+                
+                data.files.forEach(file => {
+                    const tr = document.createElement('tr');
+                    
+                    const date = new Date(file.upload_date + 'Z').toLocaleString();
+                    const size = (file.size / 1024).toFixed(2) + ' KB';
+                    
+                    tr.innerHTML = `
+                        <td>${file.filename}</td>
+                        <td>${size}</td>
+                        <td>${date}</td>
+                        <td>
+                            <button class="action-btn" onclick="downloadFile('${file.file_id}')">Decrypt & View</button>
+                            <button class="action-btn btn-danger" onclick="triggerAnomaly('${file.file_id}')">Test Fail</button>
+                        </td>
+                    `;
+                    tbody.appendChild(tr);
+                });
+            } catch (e) {
+                console.error('Failed to fetch files', e);
+            }
+        }
+
+        async function downloadFile(fileId) {
+            const resultBox = document.getElementById('download-result');
+            resultBox.style.display = 'block';
+            resultBox.textContent = 'Decrypting...';
+            
+            try {
+                const res = await fetch(`/api/download/${fileId}?user_id=web_user`);
+                const data = await res.json();
+                
+                if (data.error) {
+                    resultBox.innerHTML = `<span style="color:var(--warning)">Error: ${data.error}</span>`;
+                } else {
+                    resultBox.innerHTML = `
+                        <strong style="color:var(--success)">Decrypted Payload Preview:</strong><br><br>
+                        ${data.data_preview.replace(/</g, '&lt;')}
+                    `;
+                }
+            } catch (e) {
+                resultBox.innerHTML = `<span style="color:var(--warning)">Request failed</span>`;
+            }
+        }
+
+        async function triggerAnomaly(fileId) {
+            const resultBox = document.getElementById('download-result');
+            resultBox.style.display = 'block';
+            
+            try {
+                resultBox.textContent = 'Simulating 6 failed decryption attempts to trigger the anomaly detection system...';
+                
+                for(let i = 0; i < 6; i++) {
+                    await fetch(`/api/download/${fileId}?user_id=web_user&force_fail=true`);
+                }
+                
+                resultBox.textContent = 'Triggered 6 failed decrypts! Check the System Overview above; the anomalies count should have increased.';
+                resultBox.style.color = 'var(--warning)';
+                
+                setTimeout(fetchSystemInfo, 500);
+            } catch (e) {
+                console.error(e);
+                resultBox.textContent = 'Error simulating attacks.';
+            }
+        }
+
+        // Init
+        fetchSystemInfo();
+        fetchFiles();
+    </script>
+</body>
+</html>

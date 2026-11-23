@@ -1,0 +1,31 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments
+.env
+.venv
+venv/
+ENV/
+
+# Scratch & Temporary Build Directories
+scratch/
+scratch_build_artifacts/
+scratch_extracted/
+scratch_final_previews/
+scratch_*.py
+
+# Intermediate test output artifacts
+test_*.docx
+test_*.pdf
+
+# Databases journal / temporary files
+*.db-journal
+
+# OS / Editor specific files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

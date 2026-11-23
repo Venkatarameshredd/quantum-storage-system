@@ -1,0 +1,7 @@
+scheme_name,security_level_bits,key_generation_ms,encapsulation_encryption_ms,decapsulation_decryption_ms,total_overhead_ms,public_key_bytes,ciphertext_expansion_bytes,secret_key_bytes,quantum_resistant
+RSA-3072,128,4.52,0.15,3.21,7.88,384,0,384,False
+ECC-256,128,0.98,0.44,0.46,1.88,64,0,32,False
+Kyber-512,128,0.02,0.03,0.04,0.09,800,768,1632,True
+Kyber-768,192,0.03,0.04,0.05,0.12,1184,1088,2400,True
+Kyber-1024,256,0.04,0.05,0.06,0.15,1568,1568,3168,True
+Proposed_Hybrid_ECC_Kyber512,128,0.31,0.48,0.49,1.28,864,768,1664,True

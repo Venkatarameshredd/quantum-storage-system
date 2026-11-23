@@ -1,0 +1,45 @@
+<mxfile host="Electron" modified="2026-09-07T15:30:00.000Z" agent="Mozilla/5.0" version="21.6.8" type="device">
+  <diagram id="roadmap_diagram" name="Contributions and Roadmap">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="1">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Master Title Frame -->
+        <mxCell id="frame" value="Research Contributions and Structural Roadmap of the Manuscript" style="swimlane;fontFamily=Helvetica;fontSize=14;fontStyle=1;startSize=32;fillColor=#2B4C6F;strokeColor=#1E3A5F;fontColor=#FFFFFF;rounded=1;arcSize=3;" vertex="1" parent="1">
+          <mxGeometry x="20" y="20" width="960" height="620" as="geometry"/>
+        </mxCell>
+
+        <!-- Pillar 1 -->
+        <mxCell id="p1" value="PILLAR 1: AEDE&#xa;Adaptive Decision Engine&#xa;&#xa;• Policy-Driven Mode Selection&#xa;  - Low: ECC-256&#xa;  - Med: Kyber-512&#xa;  - High: Dual Hybrid&#xa;• Dynamic Threshold tau=5MB&#xa;  - 93% Compute Saved at 10MB&#xa;• Workload Latency Savings:&#xa;  - Profile A: -6.88%&#xa;  - Profile B: -54.38%&#xa;  - Profile C: -67.81%&#xa;&#xa;[Mapped: Sec 3.2, Sec 4, Sec 6.3]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F4F8FA;fontColor=#1E293B;strokeColor=#3B6978;strokeWidth=1.2;fontFamily=Helvetica;fontSize=9.5;align=left;spacingLeft=8;" vertex="1" parent="frame">
+          <mxGeometry x="15" y="45" width="175" height="350" as="geometry"/>
+        </mxCell>
+
+        <!-- Pillar 2 -->
+        <mxCell id="p2" value="PILLAR 2: HYBRID KEM&#xa;Dual Classical + Lattice KEM&#xa;&#xa;• Parallel Primitive Pair:&#xa;  - ECDH SECP256R1 (32B)&#xa;  - Kyber-512 ML-KEM (32B)&#xa;• IND-CCA2 Redundancy&#xa;• HKDF-SHA256 Expansion:&#xa;  - Salt: 128-bit Random&#xa;  - Outputs: K_enc || K_auth&#xa;• Benchmark: 1.28 ms&#xa;  - 6.15x Faster than RSA&#xa;  - Key Package: 864 Bytes&#xa;&#xa;[Mapped: Sec 2, Sec 3.4, Sec 8.2]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F2F7F4;fontColor=#1E293B;strokeColor=#4A7C59;strokeWidth=1.2;fontFamily=Helvetica;fontSize=9.5;align=left;spacingLeft=8;" vertex="1" parent="frame">
+          <mxGeometry x="205" y="45" width="175" height="350" as="geometry"/>
+        </mxCell>
+
+        <!-- Pillar 3 -->
+        <mxCell id="p3" value="PILLAR 3: ZERO-TRUST&#xa;Shamir Secret Sharing GF(257)&#xa;&#xa;• Byte-wise Splitting:&#xa;  - f(x) = (s_i + a_1 x) mod 257&#xa;  - (2,3)-Threshold Scheme&#xa;  - Unconditional Secrecy&#xa;• Disjoint Physical Tiers:&#xa;  - Frag 1: Object Header (S3)&#xa;  - Frag 2: Database (SQLite)&#xa;• Lagrange Reconstruction:&#xa;  - Fermat's Inverse Table&#xa;  - Asynchronous Re-keying&#xa;&#xa;[Mapped: Sec 3.5, Sec 4, Sec 8.6]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FBF8F4;fontColor=#1E293B;strokeColor=#C98A4B;strokeWidth=1.2;fontFamily=Helvetica;fontSize=9.5;align=left;spacingLeft=8;" vertex="1" parent="frame">
+          <mxGeometry x="395" y="45" width="175" height="350" as="geometry"/>
+        </mxCell>
+
+        <!-- Pillar 4 -->
+        <mxCell id="p4" value="PILLAR 4: EARLY-DROP&#xa;Outer HMAC DoS Shield&#xa;&#xa;• Two-Stage Envelope:&#xa;  - Outer HMAC-SHA256 Tag&#xa;  - Inner AES-256-GCM Body&#xa;  - AAD Bound to Unique file_id&#xa;• Flood DoS Mitigation:&#xa;  - Edge Drop in 0.012 ms&#xa;  - 106x Threat Speedup&#xa;• Resource Defense:&#xa;  - 99.06% CPU Cycles Saved&#xa;  - Bypasses DB and Kyber&#xa;&#xa;[Mapped: Sec 3.7, Sec 6.5, Sec 8.4]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDF7F7;fontColor=#1E293B;strokeColor=#B85C50;strokeWidth=1.2;fontFamily=Helvetica;fontSize=9.5;align=left;spacingLeft=8;" vertex="1" parent="frame">
+          <mxGeometry x="585" y="45" width="175" height="350" as="geometry"/>
+        </mxCell>
+
+        <!-- Pillar 5 -->
+        <mxCell id="p5" value="PILLAR 5: AUDIT TRAIL&#xa;Hash-Chain &amp; Anomaly Engine&#xa;&#xa;• Immutable Ledger:&#xa;  - H_N = SHA256(H_{N-1} || D_N)&#xa;  - Complete Tamper Evidence&#xa;  - 1 - 2^{-256} Collision Bound&#xa;• Sliding-Window Detection:&#xa;  - Window Size |W| = 20 Ops&#xa;  - Failure Threshold theta = 5&#xa;• SOC Integration:&#xa;  - Automated IP Block Directive&#xa;  - Escrow Quarantine Lock&#xa;&#xa;[Mapped: Sec 3.8-3.9, Sec 4, Sec 8.2]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F1F5F9;fontColor=#1E293B;strokeColor=#334E68;strokeWidth=1.2;fontFamily=Helvetica;fontSize=9.5;align=left;spacingLeft=8;" vertex="1" parent="frame">
+          <mxGeometry x="775" y="45" width="175" height="350" as="geometry"/>
+        </mxCell>
+
+        <!-- Bottom Structural Sequence -->
+        <mxCell id="roadmap_box" value="MANUSCRIPT STRUCTURAL EXECUTION ROADMAP (SECTIONS 1 THROUGH 10)&#xa;Sec 1: Intro &amp; Threats  →  Sec 2: Foundations &amp; PQC  →  Sec 3: Architecture Models  →  Sec 4: Formal Algorithms  →  Sec 5: Testbed Setup&#xa;Sec 6: Empirical Results &amp; Fig 7  →  Sec 7: Transport &amp; TCP  →  Sec 8: Security Proofs  →  Sec 9: Deployment &amp; SLAs  →  Sec 10: Conclusion" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FAFBFD;fontColor=#1E293B;strokeColor=#94A3B8;strokeWidth=1.2;fontFamily=Helvetica;fontSize=10;fontStyle=1;align=center;" vertex="1" parent="frame">
+          <mxGeometry x="15" y="415" width="935" height="185" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

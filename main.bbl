@@ -1,0 +1,195 @@
+\begin{thebibliography}{14}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+\bibitem[Boneh and Shoup(2020)]%
+        {boneh2020graduate}
+\bibfield{author}{\bibinfo{person}{Dan Boneh} {and} \bibinfo{person}{Victor
+  Shoup}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{A Graduate Course in Applied
+  Cryptography}}.
+\newblock \bibinfo{publisher}{Cambridge University Press},
+  \bibinfo{address}{Cambridge}.
+\newblock
+
+
+\bibitem[Katz and Lindell(2020)]%
+        {katz2020introduction}
+\bibfield{author}{\bibinfo{person}{Jonathan Katz} {and} \bibinfo{person}{Yehuda
+  Lindell}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Introduction to Modern Cryptography}
+  (\bibinfo{edition}{3rd} ed.)}.
+\newblock \bibinfo{publisher}{CRC Press}, \bibinfo{address}{Boca Raton}.
+\newblock
+
+
+\bibitem[Shor(1994)]%
+        {shor1994algorithms}
+\bibfield{author}{\bibinfo{person}{Peter~W. Shor}.}
+  \bibinfo{year}{1994}\natexlab{}.
+\newblock \showarticletitle{Algorithms for Quantum Computation: Discrete
+  Logarithms and Factoring}. In \bibinfo{booktitle}{\emph{Proceedings of the
+  35th Annual Symposium on Foundations of Computer Science (FOCS)}}.
+  \bibinfo{publisher}{IEEE}, \bibinfo{pages}{124--134}.
+\newblock
+
+
+\bibitem[Mosca and Piani(2022)]%
+        {mosca2022quantum}
+\bibfield{author}{\bibinfo{person}{Michele Mosca} {and} \bibinfo{person}{Marco
+  Piani}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Quantum Threat Timeline Report 2022}}.
+\newblock \bibinfo{type}{{T}echnical {R}eport}. \bibinfo{institution}{Global
+  Risk Institute}, \bibinfo{address}{Toronto}.
+\newblock
+
+
+\bibitem[Bos et~al\mbox{.}(2018)]%
+        {bos2018crystals}
+\bibfield{author}{\bibinfo{person}{Joppe Bos}, \bibinfo{person}{L{\'e}o Ducas},
+  \bibinfo{person}{Eike Kiltz}, \bibinfo{person}{Tancr{\`e}de Lepoint},
+  \bibinfo{person}{Vadim Lyubashevsky}, \bibinfo{person}{John~M. Schanck},
+  \bibinfo{person}{Peter Schwabe}, \bibinfo{person}{Gregor Seiler}, {and}
+  \bibinfo{person}{Damien Stehl{\'e}}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{{CRYSTALS-Kyber}: A {CCA}-Secure
+  Module-Lattice-Based {KEM}}. In \bibinfo{booktitle}{\emph{IEEE European
+  Symposium on Security and Privacy (EuroS\&P)}}. \bibinfo{publisher}{IEEE},
+  \bibinfo{pages}{253--267}.
+\newblock
+
+
+\bibitem[Avanzi et~al\mbox{.}(2021)]%
+        {avanzi2021crystals}
+\bibfield{author}{\bibinfo{person}{Roberto Avanzi}, \bibinfo{person}{Joppe
+  Bos}, \bibinfo{person}{L{\'e}o Ducas}, \bibinfo{person}{Eike Kiltz},
+  \bibinfo{person}{Tancr{\`e}de Lepoint}, \bibinfo{person}{Vadim Lyubashevsky},
+  \bibinfo{person}{John~M. Schanck}, \bibinfo{person}{Peter Schwabe},
+  \bibinfo{person}{Gregor Seiler}, {and} \bibinfo{person}{Damien Stehl{\'e}}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{{CRYSTALS-Kyber} Algorithm Specifications (Version
+  3.02)}.
+\newblock \bibinfo{journal}{\emph{NIST PQC Round 3 Submission}}
+  (\bibinfo{year}{2021}).
+\newblock
+
+
+\bibitem[Sahai and Waters(2021)]%
+        {sahai2021use}
+\bibfield{author}{\bibinfo{person}{Amit Sahai} {and} \bibinfo{person}{Brent
+  Waters}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{How to Use Indistinguishability Obfuscation:
+  Deniable Encryption, and More}.
+\newblock \bibinfo{journal}{\emph{SIAM J. Comput.}} \bibinfo{volume}{50},
+  \bibinfo{number}{3} (\bibinfo{year}{2021}), \bibinfo{pages}{735--784}.
+\newblock
+
+
+\bibitem[Bindel et~al\mbox{.}(2019)]%
+        {bindel2019hybrid}
+\bibfield{author}{\bibinfo{person}{Nina Bindel}, \bibinfo{person}{Jacqueline
+  Brendel}, \bibinfo{person}{Marc Fischlin}, \bibinfo{person}{Bernardo
+  Goncalves}, {and} \bibinfo{person}{Douglas Stebila}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Hybrid Key Encapsulation Mechanisms and
+  Authenticated Key Exchange}. In \bibinfo{booktitle}{\emph{Post-Quantum
+  Cryptography (PQCrypto 2019)}} \emph{(\bibinfo{series}{LNCS},
+  Vol.~\bibinfo{volume}{11505})}. \bibinfo{publisher}{Springer},
+  \bibinfo{pages}{206--226}.
+\newblock
+
+
+\bibitem[Eller(2021)]%
+        {eller2021new}
+\bibfield{author}{\bibinfo{person}{John Eller}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{A New Approach to Post-Quantum Cryptography}.
+\newblock \bibinfo{journal}{\emph{Journal of Cryptographic Research}}
+  \bibinfo{volume}{15}, \bibinfo{number}{2} (\bibinfo{year}{2021}),
+  \bibinfo{pages}{123--145}.
+\newblock
+
+
+\bibitem[Stebila et~al\mbox{.}(2023)]%
+        {stebila2023hybrid}
+\bibfield{author}{\bibinfo{person}{Douglas Stebila}, \bibinfo{person}{Scott
+  Fluhrer}, {and} \bibinfo{person}{Shay Gueron}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{Hybrid Key Exchange in {TLS} 1.3}.
+\newblock \bibinfo{howpublished}{Internet-Draft
+  draft-ietf-tls-hybrid-design-09, IETF}.
+\newblock
+
+
+\bibitem[Stebila and Mosca(2016)]%
+        {stebila2016post}
+\bibfield{author}{\bibinfo{person}{Douglas Stebila} {and}
+  \bibinfo{person}{Michele Mosca}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Post-Quantum Key Exchange for the Internet and the
+  Open Quantum Safe Project}. In \bibinfo{booktitle}{\emph{Selected Areas in
+  Cryptography (SAC 2016)}} \emph{(\bibinfo{series}{LNCS},
+  Vol.~\bibinfo{volume}{10532})}. \bibinfo{publisher}{Springer},
+  \bibinfo{pages}{14--37}.
+\newblock
+
+
+\bibitem[Shamir(1979)]%
+        {shamir1979share}
+\bibfield{author}{\bibinfo{person}{Adi Shamir}.}
+  \bibinfo{year}{1979}\natexlab{}.
+\newblock \showarticletitle{How to Share a Secret}.
+\newblock \bibinfo{journal}{\emph{Commun. ACM}} \bibinfo{volume}{22},
+  \bibinfo{number}{11} (\bibinfo{year}{1979}), \bibinfo{pages}{612--613}.
+\newblock
+
+
+\bibitem[Krawczyk and Eronen(2010)]%
+        {krawczyk2010hmac}
+\bibfield{author}{\bibinfo{person}{Hugo Krawczyk} {and} \bibinfo{person}{Pasi
+  Eronen}.} \bibinfo{year}{2010}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{{HMAC}-based Extract-and-Expand Key
+  Derivation Function ({HKDF})}}.
+\newblock \bibinfo{type}{RFC} 5869. \bibinfo{institution}{IETF}.
+\newblock
+
+
+\bibitem[Grover(1996)]%
+        {grover1996fast}
+\bibfield{author}{\bibinfo{person}{Lov~K. Grover}.}
+  \bibinfo{year}{1996}\natexlab{}.
+\newblock \showarticletitle{A Fast Quantum Mechanical Algorithm for Database
+  Search}. In \bibinfo{booktitle}{\emph{Proceedings of the 28th Annual ACM
+  Symposium on Theory of Computing (STOC)}}. \bibinfo{publisher}{ACM},
+  \bibinfo{pages}{212--219}.
+\newblock
+
+\end{thebibliography}

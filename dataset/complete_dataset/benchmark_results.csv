@@ -1,0 +1,1501 @@
+mode,file_size_mb,iterations,avg_latency_ms,quantum_resistant,public_key_bytes,ciphertext_expansion_bytes
+ECC-256 (Classical),0.09765625,20,4.2118,False,64,0
+Kyber-512 (Post-Quantum),0.09765625,20,0.1081,True,800,768
+Proposed Hybrid (ECC + Kyber),0.09765625,20,0.6085,True,864,768
+ECC-256 (Classical),1.0,20,2.3873,False,64,0
+Kyber-512 (Post-Quantum),1.0,20,2.0734,True,800,768
+Proposed Hybrid (ECC + Kyber),1.0,20,2.4334,True,864,768
+ECC-256 (Classical),5.0,20,7.5763,False,64,0
+Kyber-512 (Post-Quantum),5.0,20,7.0079,True,800,768
+Proposed Hybrid (ECC + Kyber),5.0,20,7.7518,True,864,768
+ECC-256 (Classical),100.0,10,117.2344,False,64,0
+Proposed Hybrid (ECC + Kyber),0.5,10,1.1221,True,864,768
+Proposed Hybrid (ECC + Kyber),30.0,10,35.9198,True,864,768
+Proposed Hybrid (ECC + Kyber),1.0,20,1.8491,True,864,768
+Proposed Hybrid (ECC + Kyber),75.0,10,89.7336,True,864,768
+ECC-256 (Classical),30.0,100,37.6247,False,64,0
+Kyber-512 (Post-Quantum),15.0,200,16.9656,True,800,768
+Kyber-512 (Post-Quantum),0.75,100,0.9729,True,800,768
+ECC-256 (Classical),2.0,20,4.7572,False,64,0
+ECC-256 (Classical),0.09765625,100,2.3759,False,64,0
+Kyber-512 (Post-Quantum),5.0,200,5.8779,True,800,768
+Kyber-512 (Post-Quantum),30.0,10,32.8413,True,800,768
+Kyber-512 (Post-Quantum),0.09765625,200,0.36,True,800,768
+Proposed Hybrid (ECC + Kyber),50.0,20,58.5528,True,864,768
+Proposed Hybrid (ECC + Kyber),0.09765625,10,2.2481,True,864,768
+Kyber-512 (Post-Quantum),0.25,100,0.5559,True,800,768
+ECC-256 (Classical),15.0,50,19.3738,False,64,0
+Proposed Hybrid (ECC + Kyber),2.0,10,3.0999,True,864,768
+Proposed Hybrid (ECC + Kyber),100.0,20,118.5211,True,864,768
+Proposed Hybrid (ECC + Kyber),7.5,50,9.3445,True,864,768
+Proposed Hybrid (ECC + Kyber),30.0,20,35.5883,True,864,768
+ECC-256 (Classical),0.04882812,20,2.5864,False,64,0
+ECC-256 (Classical),7.5,50,11.0775,False,64,0
+Proposed Hybrid (ECC + Kyber),4.0,20,5.8575,True,864,768
+Proposed Hybrid (ECC + Kyber),20.0,100,23.9087,True,864,768
+Proposed Hybrid (ECC + Kyber),1.5,200,2.4546,True,864,768
+Kyber-512 (Post-Quantum),2.0,200,2.5356,True,800,768
+Proposed Hybrid (ECC + Kyber),1.5,20,2.3157,True,864,768
+ECC-256 (Classical),20.0,10,25.4666,False,64,0
+Proposed Hybrid (ECC + Kyber),0.75,100,1.4639,True,864,768
+Kyber-512 (Post-Quantum),0.09765625,100,0.1192,True,800,768
+Proposed Hybrid (ECC + Kyber),30.0,10,35.668,True,864,768
+Kyber-512 (Post-Quantum),0.25,200,0.4463,True,800,768
+ECC-256 (Classical),3.0,100,5.5734,False,64,0
+Proposed Hybrid (ECC + Kyber),15.0,10,18.5584,True,864,768
+Proposed Hybrid (ECC + Kyber),25.0,20,29.8613,True,864,768
+Proposed Hybrid (ECC + Kyber),0.25,50,0.8427,True,864,768
+Proposed Hybrid (ECC + Kyber),5.0,20,6.5428,True,864,768
+Proposed Hybrid (ECC + Kyber),25.0,10,30.1032,True,864,768
+ECC-256 (Classical),5.0,50,8.0899,False,64,0
+Proposed Hybrid (ECC + Kyber),0.04882812,20,0.7679,True,864,768
+ECC-256 (Classical),0.09765625,200,4.3419,False,64,0
+Kyber-512 (Post-Quantum),30.0,20,32.9428,True,800,768
+Proposed Hybrid (ECC + Kyber),1.0,200,1.791,True,864,768
+Kyber-512 (Post-Quantum),1.0,50,1.5089,True,800,768
+Kyber-512 (Post-Quantum),15.0,200,16.9334,True,800,768
+ECC-256 (Classical),0.25,20,2.6167,False,64,0
+Proposed Hybrid (ECC + Kyber),30.0,20,36.0984,True,864,768
+ECC-256 (Classical),1.5,10,4.0093,False,64,0
+Kyber-512 (Post-Quantum),0.09765625,10,1.6845,True,800,768
+Proposed Hybrid (ECC + Kyber),20.0,20,24.9601,True,864,768
+Kyber-512 (Post-Quantum),50.0,200,57.707,True,800,768
+Kyber-512 (Post-Quantum),1.5,100,1.8585,True,800,768
+Kyber-512 (Post-Quantum),10.0,50,11.4761,True,800,768
+Proposed Hybrid (ECC + Kyber),10.0,100,12.8617,True,864,768
+ECC-256 (Classical),100.0,10,118.1019,False,64,0
+ECC-256 (Classical),7.5,50,10.9264,False,64,0
+Kyber-512 (Post-Quantum),15.0,20,17.1936,True,800,768
+Kyber-512 (Post-Quantum),0.75,50,0.9904,True,800,768
+ECC-256 (Classical),15.0,200,20.3998,False,64,0
+ECC-256 (Classical),0.04882812,200,2.6939,False,64,0
+Kyber-512 (Post-Quantum),0.75,100,0.9187,True,800,768
+Kyber-512 (Post-Quantum),20.0,20,22.7708,True,800,768
+Kyber-512 (Post-Quantum),0.00976562,100,0.1091,True,800,768
+Kyber-512 (Post-Quantum),15.0,50,16.75,True,800,768
+ECC-256 (Classical),30.0,100,35.8826,False,64,0
+ECC-256 (Classical),1.0,50,3.6629,False,64,0
+Proposed Hybrid (ECC + Kyber),30.0,10,35.8958,True,864,768
+ECC-256 (Classical),4.0,10,6.6857,False,64,0
+ECC-256 (Classical),25.0,20,30.7368,False,64,0
+ECC-256 (Classical),25.0,10,31.229,False,64,0
+ECC-256 (Classical),1.5,100,4.052,False,64,0
+Proposed Hybrid (ECC + Kyber),50.0,20,58.6133,True,864,768
+Proposed Hybrid (ECC + Kyber),10.0,200,12.2167,True,864,768
+Kyber-512 (Post-Quantum),25.0,50,28.3862,True,800,768
+Kyber-512 (Post-Quantum),1.5,50,2.0925,True,800,768
+Kyber-512 (Post-Quantum),0.5,50,0.6038,True,800,768
+Kyber-512 (Post-Quantum),0.09765625,10,0.4907,True,800,768
+ECC-256 (Classical),50.0,10,58.7611,False,64,0
+ECC-256 (Classical),0.5,50,2.8312,False,64,0
+Kyber-512 (Post-Quantum),1.5,50,2.009,True,800,768
+Proposed Hybrid (ECC + Kyber),3.0,200,4.4991,True,864,768
+Proposed Hybrid (ECC + Kyber),25.0,10,30.3312,True,864,768
+Kyber-512 (Post-Quantum),0.25,20,0.3117,True,800,768
+Proposed Hybrid (ECC + Kyber),0.25,10,0.8292,True,864,768
+Proposed Hybrid (ECC + Kyber),75.0,20,88.8163,True,864,768
+Proposed Hybrid (ECC + Kyber),4.0,20,5.2607,True,864,768
+ECC-256 (Classical),20.0,50,25.0368,False,64,0
+Kyber-512 (Post-Quantum),0.09765625,100,3.3502,True,800,768
+Proposed Hybrid (ECC + Kyber),0.75,100,1.5747,True,864,768
+ECC-256 (Classical),10.0,200,14.3514,False,64,0
+ECC-256 (Classical),0.5,200,3.1203,False,64,0
+Proposed Hybrid (ECC + Kyber),5.0,200,6.6202,True,864,768
+ECC-256 (Classical),3.0,50,5.8317,False,64,0
+Proposed Hybrid (ECC + Kyber),5.0,20,6.5503,True,864,768
+Proposed Hybrid (ECC + Kyber),30.0,100,36.3295,True,864,768
+ECC-256 (Classical),0.5,20,3.1592,False,64,0
+ECC-256 (Classical),10.0,10,13.7185,False,64,0
+Proposed Hybrid (ECC + Kyber),4.0,100,5.6217,True,864,768
+Proposed Hybrid (ECC + Kyber),2.0,20,2.7624,True,864,768
+ECC-256 (Classical),0.25,100,2.6563,False,64,0
+Kyber-512 (Post-Quantum),15.0,50,16.7435,True,800,768
+ECC-256 (Classical),1.5,20,3.9318,False,64,0
+Kyber-512 (Post-Quantum),2.0,10,2.2367,True,800,768
+Kyber-512 (Post-Quantum),5.0,200,5.5643,True,800,768
+ECC-256 (Classical),4.0,10,6.5345,False,64,0
+Proposed Hybrid (ECC + Kyber),2.0,20,3.1475,True,864,768
+Kyber-512 (Post-Quantum),0.25,200,0.4018,True,800,768
+Kyber-512 (Post-Quantum),5.0,50,5.5385,True,800,768
+ECC-256 (Classical),7.5,200,10.7306,False,64,0
+Proposed Hybrid (ECC + Kyber),2.0,10,2.8093,True,864,768
+Kyber-512 (Post-Quantum),30.0,20,34.0342,True,800,768
+Proposed Hybrid (ECC + Kyber),10.0,10,12.8183,True,864,768
+Proposed Hybrid (ECC + Kyber),0.25,50,0.8424,True,864,768
+Kyber-512 (Post-Quantum),3.0,100,3.3765,True,800,768
+Kyber-512 (Post-Quantum),0.5,20,0.7859,True,800,768
+Proposed Hybrid (ECC + Kyber),7.5,20,9.2569,True,864,768
+Kyber-512 (Post-Quantum),0.00976562,50,0.0965,True,800,768
+Proposed Hybrid (ECC + Kyber),50.0,200,59.2238,True,864,768
+Kyber-512 (Post-Quantum),1.0,200,1.4301,True,800,768
+Kyber-512 (Post-Quantum),0.75,10,0.7628,True,800,768
+ECC-256 (Classical),4.0,10,6.8712,False,64,0
+ECC-256 (Classical),3.0,20,5.7861,False,64,0
+ECC-256 (Classical),20.0,200,25.4106,False,64,0
+Proposed Hybrid (ECC + Kyber),15.0,100,17.8192,True,864,768
+Kyber-512 (Post-Quantum),7.5,100,8.3587,True,800,768
+Proposed Hybrid (ECC + Kyber),1.5,20,2.2808,True,864,768
+ECC-256 (Classical),0.25,100,2.2873,False,64,0
+Kyber-512 (Post-Quantum),0.75,200,1.1061,True,800,768
+ECC-256 (Classical),0.25,100,2.6236,False,64,0
+Proposed Hybrid (ECC + Kyber),15.0,200,17.5922,True,864,768
+Proposed Hybrid (ECC + Kyber),15.0,200,17.8318,True,864,768
+Proposed Hybrid (ECC + Kyber),25.0,100,29.8586,True,864,768
+Kyber-512 (Post-Quantum),20.0,100,22.6383,True,800,768
+Proposed Hybrid (ECC + Kyber),1.5,50,2.293,True,864,768
+Proposed Hybrid (ECC + Kyber),15.0,10,18.3768,True,864,768
+Kyber-512 (Post-Quantum),3.0,20,3.2982,True,800,768
+ECC-256 (Classical),0.09765625,20,2.6871,False,64,0
+ECC-256 (Classical),0.5,20,2.7535,False,64,0
+ECC-256 (Classical),15.0,100,19.7214,False,64,0
+Kyber-512 (Post-Quantum),1.0,100,1.4506,True,800,768
+Kyber-512 (Post-Quantum),0.00976562,200,0.12,True,800,768
+Kyber-512 (Post-Quantum),5.0,50,6.0872,True,800,768
+Proposed Hybrid (ECC + Kyber),10.0,200,11.8585,True,864,768
+ECC-256 (Classical),30.0,200,36.3223,False,64,0
+Kyber-512 (Post-Quantum),20.0,10,22.5765,True,800,768
+Proposed Hybrid (ECC + Kyber),4.0,100,5.4899,True,864,768
+Proposed Hybrid (ECC + Kyber),0.5,200,1.3922,True,864,768
+Proposed Hybrid (ECC + Kyber),0.00976562,100,0.6292,True,864,768
+ECC-256 (Classical),0.5,100,2.8605,False,64,0
+Kyber-512 (Post-Quantum),0.04882812,50,0.1271,True,800,768
+Kyber-512 (Post-Quantum),7.5,50,8.8056,True,800,768
+Kyber-512 (Post-Quantum),2.0,10,2.6125,True,800,768
+Proposed Hybrid (ECC + Kyber),5.0,20,6.584,True,864,768
+ECC-256 (Classical),0.09765625,10,3.8131,False,64,0
+Proposed Hybrid (ECC + Kyber),0.5,100,1.2073,True,864,768
+ECC-256 (Classical),0.25,200,2.472,False,64,0
+Proposed Hybrid (ECC + Kyber),5.0,20,6.5877,True,864,768
+ECC-256 (Classical),75.0,10,89.1449,False,64,0
+Proposed Hybrid (ECC + Kyber),0.00976562,50,0.6457,True,864,768
+Proposed Hybrid (ECC + Kyber),7.5,100,9.6121,True,864,768
+ECC-256 (Classical),100.0,20,119.3942,False,64,0
+ECC-256 (Classical),3.0,200,5.8221,False,64,0
+Proposed Hybrid (ECC + Kyber),0.04882812,50,0.521,True,864,768
+Proposed Hybrid (ECC + Kyber),5.0,10,6.5284,True,864,768
+ECC-256 (Classical),10.0,100,13.7617,False,64,0
+Proposed Hybrid (ECC + Kyber),10.0,50,12.7086,True,864,768
+ECC-256 (Classical),0.5,100,2.7649,False,64,0
+Proposed Hybrid (ECC + Kyber),25.0,50,30.3834,True,864,768
+Kyber-512 (Post-Quantum),20.0,100,22.0276,True,800,768
+Kyber-512 (Post-Quantum),50.0,50,57.1618,True,800,768
+Kyber-512 (Post-Quantum),0.09765625,50,0.12,True,800,768
+Proposed Hybrid (ECC + Kyber),15.0,200,18.183,True,864,768
+ECC-256 (Classical),20.0,50,24.9451,False,64,0
+Kyber-512 (Post-Quantum),20.0,20,22.6715,True,800,768
+Proposed Hybrid (ECC + Kyber),75.0,50,88.0391,True,864,768
+ECC-256 (Classical),0.00976562,200,2.517,False,64,0
+Proposed Hybrid (ECC + Kyber),1.5,100,2.561,True,864,768
+ECC-256 (Classical),20.0,100,25.5656,False,64,0
+Proposed Hybrid (ECC + Kyber),1.5,50,2.4874,True,864,768
+Kyber-512 (Post-Quantum),50.0,50,55.3701,True,800,768
+Kyber-512 (Post-Quantum),30.0,50,33.5684,True,800,768
+Kyber-512 (Post-Quantum),15.0,50,16.9483,True,800,768
+ECC-256 (Classical),1.0,50,3.5337,False,64,0
+ECC-256 (Classical),30.0,20,36.9447,False,64,0
+Proposed Hybrid (ECC + Kyber),50.0,200,60.6626,True,864,768
+ECC-256 (Classical),3.0,10,5.6971,False,64,0
+Proposed Hybrid (ECC + Kyber),3.0,10,4.3668,True,864,768
+Kyber-512 (Post-Quantum),30.0,20,33.9428,True,800,768
+Proposed Hybrid (ECC + Kyber),3.0,20,4.2084,True,864,768
+ECC-256 (Classical),20.0,10,24.8473,False,64,0
+ECC-256 (Classical),15.0,50,19.3605,False,64,0
+Kyber-512 (Post-Quantum),0.04882812,50,0.2465,True,800,768
+ECC-256 (Classical),50.0,10,60.0174,False,64,0
+Kyber-512 (Post-Quantum),0.5,200,0.8123,True,800,768
+Proposed Hybrid (ECC + Kyber),30.0,100,36.2811,True,864,768
+ECC-256 (Classical),75.0,200,88.7505,False,64,0
+Proposed Hybrid (ECC + Kyber),15.0,50,17.9879,True,864,768
+Proposed Hybrid (ECC + Kyber),10.0,50,12.1519,True,864,768
+Proposed Hybrid (ECC + Kyber),0.25,20,0.7996,True,864,768
+Proposed Hybrid (ECC + Kyber),1.0,50,1.9366,True,864,768
+ECC-256 (Classical),30.0,10,37.017,False,64,0
+Kyber-512 (Post-Quantum),0.00976562,100,1.6743,True,800,768
+ECC-256 (Classical),3.0,100,5.546,False,64,0
+Proposed Hybrid (ECC + Kyber),1.5,50,2.1569,True,864,768
+ECC-256 (Classical),1.0,100,3.2907,False,64,0
+Proposed Hybrid (ECC + Kyber),30.0,20,36.3295,True,864,768
+ECC-256 (Classical),0.5,10,2.9747,False,64,0
+Proposed Hybrid (ECC + Kyber),0.75,50,1.5336,True,864,768
+ECC-256 (Classical),3.0,100,5.4969,False,64,0
+Proposed Hybrid (ECC + Kyber),15.0,50,18.1054,True,864,768
+Kyber-512 (Post-Quantum),30.0,100,34.025,True,800,768
+ECC-256 (Classical),0.09765625,200,2.6018,False,64,0
+ECC-256 (Classical),0.00976562,10,2.1547,False,64,0
+ECC-256 (Classical),50.0,200,61.1443,False,64,0
+ECC-256 (Classical),2.0,200,4.5993,False,64,0
+Proposed Hybrid (ECC + Kyber),0.75,100,1.3268,True,864,768
+Kyber-512 (Post-Quantum),0.75,200,0.6976,True,800,768
+ECC-256 (Classical),100.0,100,115.6394,False,64,0
+ECC-256 (Classical),4.0,10,6.9403,False,64,0
+Proposed Hybrid (ECC + Kyber),4.0,100,5.0606,True,864,768
+ECC-256 (Classical),7.5,200,10.936,False,64,0
+Kyber-512 (Post-Quantum),15.0,10,16.9472,True,800,768
+ECC-256 (Classical),7.5,200,11.0553,False,64,0
+Kyber-512 (Post-Quantum),30.0,100,34.4337,True,800,768
+Proposed Hybrid (ECC + Kyber),75.0,100,89.6649,True,864,768
+ECC-256 (Classical),15.0,10,19.5287,False,64,0
+Proposed Hybrid (ECC + Kyber),3.0,100,4.2927,True,864,768
+ECC-256 (Classical),20.0,10,25.9078,False,64,0
+Kyber-512 (Post-Quantum),1.5,20,1.7903,True,800,768
+Proposed Hybrid (ECC + Kyber),30.0,10,35.6915,True,864,768
+ECC-256 (Classical),0.25,100,2.6474,False,64,0
+Kyber-512 (Post-Quantum),100.0,20,113.3999,True,800,768
+Kyber-512 (Post-Quantum),2.0,100,2.3286,True,800,768
+Kyber-512 (Post-Quantum),20.0,20,22.1301,True,800,768
+Proposed Hybrid (ECC + Kyber),75.0,200,88.753,True,864,768
+Kyber-512 (Post-Quantum),0.5,10,0.7539,True,800,768
+Kyber-512 (Post-Quantum),4.0,200,4.2219,True,800,768
+Proposed Hybrid (ECC + Kyber),0.00976562,50,0.6016,True,864,768
+Kyber-512 (Post-Quantum),20.0,20,23.1208,True,800,768
+Kyber-512 (Post-Quantum),30.0,100,33.246,True,800,768
+Kyber-512 (Post-Quantum),7.5,100,8.9369,True,800,768
+Proposed Hybrid (ECC + Kyber),1.0,20,1.5891,True,864,768
+Kyber-512 (Post-Quantum),10.0,10,11.7462,True,800,768
+Kyber-512 (Post-Quantum),20.0,100,23.3458,True,800,768
+Kyber-512 (Post-Quantum),100.0,20,111.9372,True,800,768
+Proposed Hybrid (ECC + Kyber),0.04882812,20,3.5299,True,864,768
+Kyber-512 (Post-Quantum),0.25,200,0.4002,True,800,768
+Kyber-512 (Post-Quantum),0.00976562,20,2.9978,True,800,768
+Proposed Hybrid (ECC + Kyber),2.0,50,2.6645,True,864,768
+Kyber-512 (Post-Quantum),7.5,10,8.8618,True,800,768
+Proposed Hybrid (ECC + Kyber),7.5,50,9.0839,True,864,768
+ECC-256 (Classical),20.0,200,25.0565,False,64,0
+Proposed Hybrid (ECC + Kyber),3.0,20,4.094,True,864,768
+ECC-256 (Classical),0.09765625,100,3.7604,False,64,0
+ECC-256 (Classical),3.0,10,5.4464,False,64,0
+Kyber-512 (Post-Quantum),4.0,10,4.4896,True,800,768
+Kyber-512 (Post-Quantum),1.5,200,1.9722,True,800,768
+ECC-256 (Classical),50.0,20,60.3598,False,64,0
+Proposed Hybrid (ECC + Kyber),7.5,200,9.8208,True,864,768
+Proposed Hybrid (ECC + Kyber),1.5,100,2.5394,True,864,768
+Kyber-512 (Post-Quantum),2.0,100,2.5467,True,800,768
+Kyber-512 (Post-Quantum),0.00976562,100,0.1223,True,800,768
+Kyber-512 (Post-Quantum),5.0,200,5.6315,True,800,768
+Proposed Hybrid (ECC + Kyber),100.0,100,118.648,True,864,768
+Kyber-512 (Post-Quantum),1.0,100,1.5888,True,800,768
+Kyber-512 (Post-Quantum),0.25,20,0.2491,True,800,768
+Proposed Hybrid (ECC + Kyber),3.0,10,4.0786,True,864,768
+ECC-256 (Classical),7.5,50,10.5593,False,64,0
+Proposed Hybrid (ECC + Kyber),0.04882812,200,0.6153,True,864,768
+Proposed Hybrid (ECC + Kyber),3.0,20,4.2339,True,864,768
+Kyber-512 (Post-Quantum),1.0,200,1.1601,True,800,768
+Proposed Hybrid (ECC + Kyber),0.5,10,1.1579,True,864,768
+Proposed Hybrid (ECC + Kyber),15.0,10,18.0936,True,864,768
+ECC-256 (Classical),5.0,20,8.2187,False,64,0
+ECC-256 (Classical),10.0,20,13.6565,False,64,0
+Kyber-512 (Post-Quantum),0.5,200,0.3681,True,800,768
+Kyber-512 (Post-Quantum),0.75,50,0.9213,True,800,768
+ECC-256 (Classical),3.0,50,5.6744,False,64,0
+Proposed Hybrid (ECC + Kyber),1.5,100,2.4335,True,864,768
+Kyber-512 (Post-Quantum),5.0,10,6.028,True,800,768
+Proposed Hybrid (ECC + Kyber),15.0,50,18.3906,True,864,768
+Kyber-512 (Post-Quantum),2.0,200,2.5778,True,800,768
+Kyber-512 (Post-Quantum),0.25,20,0.1021,True,800,768
+Proposed Hybrid (ECC + Kyber),0.00976562,200,0.5645,True,864,768
+Proposed Hybrid (ECC + Kyber),100.0,100,120.648,True,864,768
+ECC-256 (Classical),3.0,100,6.0511,False,64,0
+ECC-256 (Classical),3.0,100,6.1129,False,64,0
+Proposed Hybrid (ECC + Kyber),0.25,20,1.0563,True,864,768
+Proposed Hybrid (ECC + Kyber),30.0,100,36.5467,True,864,768
+Proposed Hybrid (ECC + Kyber),0.5,100,1.3884,True,864,768
+ECC-256 (Classical),10.0,50,14.0027,False,64,0
+Kyber-512 (Post-Quantum),5.0,20,5.5947,True,800,768
+Proposed Hybrid (ECC + Kyber),5.0,10,6.6062,True,864,768
+Proposed Hybrid (ECC + Kyber),5.0,200,6.4069,True,864,768
+Kyber-512 (Post-Quantum),1.0,10,1.399,True,800,768
+Proposed Hybrid (ECC + Kyber),0.09765625,20,2.1742,True,864,768
+ECC-256 (Classical),0.5,200,2.5528,False,64,0
+ECC-256 (Classical),0.09765625,200,2.1748,False,64,0
+ECC-256 (Classical),0.5,200,2.726,False,64,0
+ECC-256 (Classical),2.0,20,4.288,False,64,0
+ECC-256 (Classical),0.25,10,2.5187,False,64,0
+ECC-256 (Classical),0.00976562,50,2.2885,False,64,0
+Proposed Hybrid (ECC + Kyber),0.5,100,1.2251,True,864,768
+Kyber-512 (Post-Quantum),0.25,10,0.2919,True,800,768
+Kyber-512 (Post-Quantum),50.0,10,56.4225,True,800,768
+Proposed Hybrid (ECC + Kyber),25.0,20,31.0342,True,864,768
+Kyber-512 (Post-Quantum),25.0,50,28.3971,True,800,768
+ECC-256 (Classical),100.0,10,120.4987,False,64,0
+Kyber-512 (Post-Quantum),10.0,10,11.3448,True,800,768
+ECC-256 (Classical),15.0,10,19.457,False,64,0
+Proposed Hybrid (ECC + Kyber),0.5,50,1.3202,True,864,768
+Proposed Hybrid (ECC + Kyber),100.0,200,118.2694,True,864,768
+Kyber-512 (Post-Quantum),75.0,200,82.9366,True,800,768
+Proposed Hybrid (ECC + Kyber),15.0,200,17.7473,True,864,768
+Proposed Hybrid (ECC + Kyber),0.25,200,1.0609,True,864,768
+Kyber-512 (Post-Quantum),1.0,100,1.4001,True,800,768
+Kyber-512 (Post-Quantum),15.0,100,16.6994,True,800,768
+Kyber-512 (Post-Quantum),0.25,50,0.3848,True,800,768
+ECC-256 (Classical),0.5,100,2.9866,False,64,0
+ECC-256 (Classical),0.09765625,10,2.1846,False,64,0
+ECC-256 (Classical),0.5,200,2.983,False,64,0
+Proposed Hybrid (ECC + Kyber),50.0,200,59.4295,True,864,768
+Proposed Hybrid (ECC + Kyber),5.0,100,6.6508,True,864,768
+Proposed Hybrid (ECC + Kyber),0.04882812,50,0.6807,True,864,768
+ECC-256 (Classical),0.5,100,2.9431,False,64,0
+Proposed Hybrid (ECC + Kyber),0.25,50,0.7694,True,864,768
+Kyber-512 (Post-Quantum),50.0,20,57.2785,True,800,768
+Proposed Hybrid (ECC + Kyber),30.0,200,35.7024,True,864,768
+ECC-256 (Classical),75.0,50,87.101,False,64,0
+Proposed Hybrid (ECC + Kyber),0.75,50,1.5633,True,864,768
+ECC-256 (Classical),5.0,10,7.5439,False,64,0
+Proposed Hybrid (ECC + Kyber),0.5,200,1.1693,True,864,768
+ECC-256 (Classical),100.0,10,117.8329,False,64,0
+Kyber-512 (Post-Quantum),25.0,20,27.7302,True,800,768
+Proposed Hybrid (ECC + Kyber),5.0,50,6.6492,True,864,768
+Proposed Hybrid (ECC + Kyber),4.0,200,5.4294,True,864,768
+ECC-256 (Classical),0.75,200,3.1895,False,64,0
+Kyber-512 (Post-Quantum),0.09765625,50,0.1676,True,800,768
+Proposed Hybrid (ECC + Kyber),2.0,20,2.8334,True,864,768
+Kyber-512 (Post-Quantum),0.25,50,0.6076,True,800,768
+Proposed Hybrid (ECC + Kyber),50.0,100,60.5197,True,864,768
+ECC-256 (Classical),3.0,10,5.5413,False,64,0
+Kyber-512 (Post-Quantum),0.00976562,20,0.2851,True,800,768
+Kyber-512 (Post-Quantum),0.5,50,0.7008,True,800,768
+ECC-256 (Classical),10.0,20,13.833,False,64,0
+Proposed Hybrid (ECC + Kyber),7.5,200,9.5419,True,864,768
+Kyber-512 (Post-Quantum),5.0,10,6.0356,True,800,768
+ECC-256 (Classical),0.04882812,100,2.2974,False,64,0
+Kyber-512 (Post-Quantum),10.0,200,11.3802,True,800,768
+Kyber-512 (Post-Quantum),100.0,100,112.4039,True,800,768
+Proposed Hybrid (ECC + Kyber),4.0,20,5.3985,True,864,768
+ECC-256 (Classical),15.0,50,19.3864,False,64,0
+Kyber-512 (Post-Quantum),10.0,200,11.405,True,800,768
+Kyber-512 (Post-Quantum),25.0,10,28.7469,True,800,768
+ECC-256 (Classical),1.5,50,3.8175,False,64,0
+Proposed Hybrid (ECC + Kyber),0.09765625,200,0.9017,True,864,768
+Proposed Hybrid (ECC + Kyber),5.0,50,6.7265,True,864,768
+ECC-256 (Classical),100.0,20,118.3132,False,64,0
+ECC-256 (Classical),0.75,200,3.2371,False,64,0
+ECC-256 (Classical),100.0,10,119.5124,False,64,0
+Proposed Hybrid (ECC + Kyber),15.0,200,18.1911,True,864,768
+Proposed Hybrid (ECC + Kyber),15.0,200,18.0036,True,864,768
+ECC-256 (Classical),100.0,50,115.5648,False,64,0
+Kyber-512 (Post-Quantum),15.0,10,16.6523,True,800,768
+ECC-256 (Classical),2.0,200,4.6543,False,64,0
+ECC-256 (Classical),5.0,200,7.9586,False,64,0
+Kyber-512 (Post-Quantum),0.04882812,50,3.0867,True,800,768
+Proposed Hybrid (ECC + Kyber),0.09765625,200,0.5966,True,864,768
+Proposed Hybrid (ECC + Kyber),0.04882812,100,0.7002,True,864,768
+Kyber-512 (Post-Quantum),4.0,200,4.1018,True,800,768
+Kyber-512 (Post-Quantum),15.0,10,16.9419,True,800,768
+Proposed Hybrid (ECC + Kyber),0.09765625,200,0.8187,True,864,768
+Proposed Hybrid (ECC + Kyber),15.0,200,18.6001,True,864,768
+Kyber-512 (Post-Quantum),75.0,20,83.4248,True,800,768
+Proposed Hybrid (ECC + Kyber),10.0,50,12.6253,True,864,768
+Proposed Hybrid (ECC + Kyber),75.0,10,88.8668,True,864,768
+Proposed Hybrid (ECC + Kyber),0.25,200,0.8996,True,864,768
+Kyber-512 (Post-Quantum),7.5,50,8.4869,True,800,768
+Kyber-512 (Post-Quantum),75.0,20,82.3112,True,800,768
+Proposed Hybrid (ECC + Kyber),0.09765625,200,0.8538,True,864,768
+Proposed Hybrid (ECC + Kyber),7.5,20,9.6891,True,864,768
+Proposed Hybrid (ECC + Kyber),0.09765625,50,0.5735,True,864,768
+Proposed Hybrid (ECC + Kyber),25.0,10,30.8006,True,864,768
+Kyber-512 (Post-Quantum),10.0,200,11.6062,True,800,768
+Kyber-512 (Post-Quantum),1.0,50,1.2862,True,800,768
+ECC-256 (Classical),1.0,20,3.5277,False,64,0
+Proposed Hybrid (ECC + Kyber),0.25,200,1.0515,True,864,768
+Proposed Hybrid (ECC + Kyber),25.0,10,29.6858,True,864,768
+Kyber-512 (Post-Quantum),0.5,200,0.9396,True,800,768
+ECC-256 (Classical),0.5,20,3.0073,False,64,0
+ECC-256 (Classical),0.75,100,2.921,False,64,0
+Proposed Hybrid (ECC + Kyber),10.0,50,12.2994,True,864,768
+Proposed Hybrid (ECC + Kyber),75.0,50,85.8414,True,864,768
+Proposed Hybrid (ECC + Kyber),15.0,20,18.4162,True,864,768
+Kyber-512 (Post-Quantum),20.0,20,23.7155,True,800,768
+Kyber-512 (Post-Quantum),50.0,100,56.3403,True,800,768
+Kyber-512 (Post-Quantum),25.0,200,27.2458,True,800,768
+Proposed Hybrid (ECC + Kyber),0.75,20,1.6139,True,864,768
+Kyber-512 (Post-Quantum),100.0,100,113.1063,True,800,768
+Proposed Hybrid (ECC + Kyber),30.0,10,36.7137,True,864,768
+ECC-256 (Classical),3.0,10,5.4364,False,64,0
+Proposed Hybrid (ECC + Kyber),2.0,100,3.1261,True,864,768
+Kyber-512 (Post-Quantum),1.5,100,1.9779,True,800,768
+ECC-256 (Classical),0.00976562,100,2.1956,False,64,0
+ECC-256 (Classical),0.09765625,50,5.3627,False,64,0
+ECC-256 (Classical),100.0,50,118.1805,False,64,0
+Proposed Hybrid (ECC + Kyber),20.0,20,24.5315,True,864,768
+Proposed Hybrid (ECC + Kyber),20.0,100,24.4327,True,864,768
+ECC-256 (Classical),2.0,20,4.6024,False,64,0
+Proposed Hybrid (ECC + Kyber),30.0,200,35.1302,True,864,768
+ECC-256 (Classical),1.5,50,4.1634,False,64,0
+Kyber-512 (Post-Quantum),0.04882812,20,2.7428,True,800,768
+Proposed Hybrid (ECC + Kyber),20.0,200,23.7685,True,864,768
+Proposed Hybrid (ECC + Kyber),0.00976562,200,0.6658,True,864,768
+ECC-256 (Classical),75.0,50,89.259,False,64,0
+ECC-256 (Classical),50.0,100,59.6049,False,64,0
+Proposed Hybrid (ECC + Kyber),5.0,10,6.4683,True,864,768
+Proposed Hybrid (ECC + Kyber),30.0,200,35.4872,True,864,768
+Proposed Hybrid (ECC + Kyber),20.0,10,24.1006,True,864,768
+Kyber-512 (Post-Quantum),7.5,50,8.5458,True,800,768
+ECC-256 (Classical),0.09765625,50,2.27,False,64,0
+Proposed Hybrid (ECC + Kyber),100.0,10,118.5121,True,864,768
+Proposed Hybrid (ECC + Kyber),0.04882812,50,0.5727,True,864,768
+Proposed Hybrid (ECC + Kyber),100.0,20,116.1685,True,864,768
+ECC-256 (Classical),100.0,20,117.8609,False,64,0
+ECC-256 (Classical),0.09765625,100,2.4001,False,64,0
+Kyber-512 (Post-Quantum),0.04882812,50,0.2481,True,800,768
+Kyber-512 (Post-Quantum),30.0,100,34.5929,True,800,768
+ECC-256 (Classical),3.0,50,5.8142,False,64,0
+Kyber-512 (Post-Quantum),100.0,50,113.2714,True,800,768
+Kyber-512 (Post-Quantum),7.5,100,8.7272,True,800,768
+Kyber-512 (Post-Quantum),4.0,20,4.5585,True,800,768
+ECC-256 (Classical),25.0,50,30.5805,False,64,0
+Kyber-512 (Post-Quantum),10.0,10,10.9039,True,800,768
+Kyber-512 (Post-Quantum),30.0,50,33.0806,True,800,768
+Kyber-512 (Post-Quantum),0.25,10,0.3602,True,800,768
+ECC-256 (Classical),75.0,100,87.6256,False,64,0
+Kyber-512 (Post-Quantum),15.0,50,17.6809,True,800,768
+Kyber-512 (Post-Quantum),5.0,200,5.8695,True,800,768
+ECC-256 (Classical),2.0,10,4.5127,False,64,0
+ECC-256 (Classical),25.0,20,30.5784,False,64,0
+Proposed Hybrid (ECC + Kyber),0.5,200,1.2482,True,864,768
+Proposed Hybrid (ECC + Kyber),0.09765625,20,0.7257,True,864,768
+ECC-256 (Classical),7.5,200,10.6124,False,64,0
+Kyber-512 (Post-Quantum),5.0,50,5.5419,True,800,768
+ECC-256 (Classical),0.09765625,200,2.2623,False,64,0
+ECC-256 (Classical),1.5,10,3.993,False,64,0
+Proposed Hybrid (ECC + Kyber),0.75,100,1.378,True,864,768
+Proposed Hybrid (ECC + Kyber),2.0,50,3.1607,True,864,768
+Proposed Hybrid (ECC + Kyber),15.0,20,18.1648,True,864,768
+ECC-256 (Classical),20.0,20,26.2778,False,64,0
+Kyber-512 (Post-Quantum),0.5,10,0.8263,True,800,768
+Proposed Hybrid (ECC + Kyber),0.09765625,50,0.977,True,864,768
+Proposed Hybrid (ECC + Kyber),0.09765625,200,0.7331,True,864,768
+Kyber-512 (Post-Quantum),100.0,20,113.4989,True,800,768
+ECC-256 (Classical),25.0,20,31.9764,False,64,0
+ECC-256 (Classical),1.5,100,3.9965,False,64,0
+Proposed Hybrid (ECC + Kyber),5.0,200,6.2741,True,864,768
+Proposed Hybrid (ECC + Kyber),30.0,20,36.8443,True,864,768
+Kyber-512 (Post-Quantum),0.09765625,10,0.0663,True,800,768
+Proposed Hybrid (ECC + Kyber),10.0,100,12.7346,True,864,768
+Kyber-512 (Post-Quantum),0.09765625,20,0.1557,True,800,768
+Proposed Hybrid (ECC + Kyber),5.0,20,6.3582,True,864,768
+ECC-256 (Classical),100.0,200,117.3967,False,64,0
+ECC-256 (Classical),25.0,10,30.7758,False,64,0
+Kyber-512 (Post-Quantum),25.0,20,28.3868,True,800,768
+Proposed Hybrid (ECC + Kyber),1.5,50,2.5509,True,864,768
+Kyber-512 (Post-Quantum),3.0,10,3.6715,True,800,768
+Proposed Hybrid (ECC + Kyber),2.0,20,3.4351,True,864,768
+Proposed Hybrid (ECC + Kyber),3.0,200,4.4224,True,864,768
+ECC-256 (Classical),50.0,200,60.5135,False,64,0
+Proposed Hybrid (ECC + Kyber),0.75,200,1.6545,True,864,768
+ECC-256 (Classical),50.0,10,59.3282,False,64,0
+Proposed Hybrid (ECC + Kyber),0.09765625,10,0.7809,True,864,768
+Proposed Hybrid (ECC + Kyber),50.0,100,58.9504,True,864,768
+Kyber-512 (Post-Quantum),100.0,10,113.7384,True,800,768
+Kyber-512 (Post-Quantum),100.0,50,110.819,True,800,768
+Kyber-512 (Post-Quantum),1.5,100,1.5776,True,800,768
+Kyber-512 (Post-Quantum),0.75,100,1.0609,True,800,768
+ECC-256 (Classical),20.0,100,25.1655,False,64,0
+Kyber-512 (Post-Quantum),4.0,50,4.7287,True,800,768
+Proposed Hybrid (ECC + Kyber),0.5,50,1.1121,True,864,768
+Kyber-512 (Post-Quantum),15.0,10,16.8258,True,800,768
+ECC-256 (Classical),15.0,20,19.8048,False,64,0
+Kyber-512 (Post-Quantum),7.5,200,8.6742,True,800,768
+Kyber-512 (Post-Quantum),1.5,20,2.0821,True,800,768
+Kyber-512 (Post-Quantum),1.0,20,1.1634,True,800,768
+Kyber-512 (Post-Quantum),25.0,100,28.5964,True,800,768
+Proposed Hybrid (ECC + Kyber),0.09765625,100,0.6429,True,864,768
+Proposed Hybrid (ECC + Kyber),1.5,20,2.3865,True,864,768
+Proposed Hybrid (ECC + Kyber),20.0,200,24.3657,True,864,768
+Proposed Hybrid (ECC + Kyber),20.0,50,24.4643,True,864,768
+Proposed Hybrid (ECC + Kyber),0.5,50,1.2439,True,864,768
+Kyber-512 (Post-Quantum),5.0,100,5.82,True,800,768
+Kyber-512 (Post-Quantum),30.0,20,33.8045,True,800,768
+ECC-256 (Classical),30.0,50,36.3039,False,64,0
+Proposed Hybrid (ECC + Kyber),30.0,50,36.4799,True,864,768
+ECC-256 (Classical),75.0,10,89.8103,False,64,0
+Kyber-512 (Post-Quantum),4.0,200,4.5972,True,800,768
+Proposed Hybrid (ECC + Kyber),0.5,20,1.0548,True,864,768
+ECC-256 (Classical),0.04882812,10,2.346,False,64,0
+Kyber-512 (Post-Quantum),20.0,200,23.1145,True,800,768
+Proposed Hybrid (ECC + Kyber),0.5,50,1.5082,True,864,768
+Kyber-512 (Post-Quantum),4.0,20,4.9738,True,800,768
+Kyber-512 (Post-Quantum),3.0,200,3.4912,True,800,768
+Proposed Hybrid (ECC + Kyber),25.0,200,29.4759,True,864,768
+Kyber-512 (Post-Quantum),20.0,10,22.5869,True,800,768
+Kyber-512 (Post-Quantum),4.0,10,4.3058,True,800,768
+Proposed Hybrid (ECC + Kyber),100.0,10,117.1714,True,864,768
+Proposed Hybrid (ECC + Kyber),20.0,50,24.4098,True,864,768
+Proposed Hybrid (ECC + Kyber),50.0,20,58.126,True,864,768
+Kyber-512 (Post-Quantum),0.04882812,200,0.3064,True,800,768
+Proposed Hybrid (ECC + Kyber),7.5,20,9.8245,True,864,768
+Proposed Hybrid (ECC + Kyber),1.5,10,2.4989,True,864,768
+Kyber-512 (Post-Quantum),0.00976562,100,0.1378,True,800,768
+Kyber-512 (Post-Quantum),10.0,20,10.9375,True,800,768
+Proposed Hybrid (ECC + Kyber),20.0,10,24.2429,True,864,768
+ECC-256 (Classical),0.5,200,2.3573,False,64,0
+Kyber-512 (Post-Quantum),20.0,200,21.9548,True,800,768
+Kyber-512 (Post-Quantum),4.0,20,4.7937,True,800,768
+Proposed Hybrid (ECC + Kyber),5.0,50,6.442,True,864,768
+ECC-256 (Classical),20.0,20,25.2313,False,64,0
+Proposed Hybrid (ECC + Kyber),3.0,50,4.3515,True,864,768
+Kyber-512 (Post-Quantum),1.0,100,1.0601,True,800,768
+ECC-256 (Classical),2.0,50,4.6292,False,64,0
+Kyber-512 (Post-Quantum),50.0,200,56.865,True,800,768
+Kyber-512 (Post-Quantum),5.0,20,5.6127,True,800,768
+Proposed Hybrid (ECC + Kyber),0.04882812,50,1.0085,True,864,768
+ECC-256 (Classical),20.0,20,25.7867,False,64,0
+Proposed Hybrid (ECC + Kyber),30.0,50,35.9418,True,864,768
+ECC-256 (Classical),75.0,200,87.8964,False,64,0
+Proposed Hybrid (ECC + Kyber),1.5,10,2.5221,True,864,768
+ECC-256 (Classical),1.5,10,3.9558,False,64,0
+Proposed Hybrid (ECC + Kyber),10.0,50,12.0032,True,864,768
+Proposed Hybrid (ECC + Kyber),0.5,10,1.2811,True,864,768
+Proposed Hybrid (ECC + Kyber),0.75,100,1.8388,True,864,768
+Kyber-512 (Post-Quantum),20.0,20,22.1833,True,800,768
+Proposed Hybrid (ECC + Kyber),4.0,50,5.7048,True,864,768
+ECC-256 (Classical),100.0,200,118.3256,False,64,0
+ECC-256 (Classical),30.0,10,35.8049,False,64,0
+Kyber-512 (Post-Quantum),0.04882812,100,0.3465,True,800,768
+ECC-256 (Classical),3.0,10,5.6707,False,64,0
+Kyber-512 (Post-Quantum),4.0,50,4.9023,True,800,768
+Proposed Hybrid (ECC + Kyber),100.0,200,114.7554,True,864,768
+Kyber-512 (Post-Quantum),25.0,100,28.1974,True,800,768
+Kyber-512 (Post-Quantum),1.0,10,1.3656,True,800,768
+ECC-256 (Classical),2.0,20,4.7701,False,64,0
+Proposed Hybrid (ECC + Kyber),4.0,50,5.3071,True,864,768
+Kyber-512 (Post-Quantum),75.0,100,83.4071,True,800,768
+ECC-256 (Classical),25.0,50,30.8591,False,64,0
+Kyber-512 (Post-Quantum),0.5,100,0.7512,True,800,768
+Kyber-512 (Post-Quantum),1.5,10,1.6903,True,800,768
+Kyber-512 (Post-Quantum),2.0,50,2.5208,True,800,768
+ECC-256 (Classical),50.0,200,59.7384,False,64,0
+Proposed Hybrid (ECC + Kyber),1.5,10,2.5824,True,864,768
+Kyber-512 (Post-Quantum),0.25,100,0.5558,True,800,768
+Proposed Hybrid (ECC + Kyber),3.0,10,4.4403,True,864,768
+Proposed Hybrid (ECC + Kyber),3.0,50,4.2792,True,864,768
+Kyber-512 (Post-Quantum),20.0,20,23.6615,True,800,768
+Kyber-512 (Post-Quantum),75.0,50,83.3124,True,800,768
+ECC-256 (Classical),30.0,20,35.5347,False,64,0
+Proposed Hybrid (ECC + Kyber),75.0,10,87.2715,True,864,768
+ECC-256 (Classical),0.09765625,200,4.5852,False,64,0
+Proposed Hybrid (ECC + Kyber),25.0,20,29.8435,True,864,768
+ECC-256 (Classical),25.0,100,30.9781,False,64,0
+Kyber-512 (Post-Quantum),1.0,200,1.4359,True,800,768
+ECC-256 (Classical),0.04882812,100,2.4536,False,64,0
+ECC-256 (Classical),15.0,200,19.0273,False,64,0
+Kyber-512 (Post-Quantum),3.0,10,3.4048,True,800,768
+Proposed Hybrid (ECC + Kyber),2.0,10,3.024,True,864,768
+Proposed Hybrid (ECC + Kyber),10.0,50,12.5645,True,864,768
+ECC-256 (Classical),0.09765625,200,2.4648,False,64,0
+Kyber-512 (Post-Quantum),0.04882812,50,0.1819,True,800,768
+Kyber-512 (Post-Quantum),0.5,100,0.8645,True,800,768
+ECC-256 (Classical),7.5,100,10.9134,False,64,0
+Proposed Hybrid (ECC + Kyber),30.0,20,36.2426,True,864,768
+Proposed Hybrid (ECC + Kyber),30.0,100,35.818,True,864,768
+ECC-256 (Classical),0.5,20,2.8919,False,64,0
+Kyber-512 (Post-Quantum),15.0,200,15.9117,True,800,768
+ECC-256 (Classical),30.0,100,36.8086,False,64,0
+Proposed Hybrid (ECC + Kyber),2.0,20,3.1759,True,864,768
+Proposed Hybrid (ECC + Kyber),0.25,10,0.716,True,864,768
+ECC-256 (Classical),0.00976562,20,4.6235,False,64,0
+Proposed Hybrid (ECC + Kyber),15.0,200,18.3157,True,864,768
+Kyber-512 (Post-Quantum),0.04882812,100,0.1591,True,800,768
+ECC-256 (Classical),1.0,10,3.3137,False,64,0
+Proposed Hybrid (ECC + Kyber),50.0,50,59.6318,True,864,768
+ECC-256 (Classical),75.0,50,88.3234,False,64,0
+Kyber-512 (Post-Quantum),25.0,20,28.4266,True,800,768
+ECC-256 (Classical),3.0,50,5.5054,False,64,0
+Proposed Hybrid (ECC + Kyber),0.75,100,1.4597,True,864,768
+Kyber-512 (Post-Quantum),20.0,10,23.1766,True,800,768
+Proposed Hybrid (ECC + Kyber),25.0,50,29.869,True,864,768
+ECC-256 (Classical),10.0,100,13.741,False,64,0
+ECC-256 (Classical),30.0,100,37.1639,False,64,0
+Proposed Hybrid (ECC + Kyber),1.5,50,2.5385,True,864,768
+Kyber-512 (Post-Quantum),0.04882812,200,0.3371,True,800,768
+ECC-256 (Classical),30.0,200,36.4482,False,64,0
+Kyber-512 (Post-Quantum),4.0,10,4.7339,True,800,768
+Proposed Hybrid (ECC + Kyber),5.0,10,6.5267,True,864,768
+Proposed Hybrid (ECC + Kyber),2.0,100,2.8945,True,864,768
+ECC-256 (Classical),75.0,200,89.1271,False,64,0
+ECC-256 (Classical),50.0,200,59.3855,False,64,0
+Kyber-512 (Post-Quantum),20.0,20,22.2268,True,800,768
+Proposed Hybrid (ECC + Kyber),1.0,20,2.1713,True,864,768
+ECC-256 (Classical),0.25,100,2.5071,False,64,0
+Proposed Hybrid (ECC + Kyber),7.5,20,9.1142,True,864,768
+Kyber-512 (Post-Quantum),4.0,50,4.333,True,800,768
+Kyber-512 (Post-Quantum),3.0,50,3.5694,True,800,768
+Kyber-512 (Post-Quantum),25.0,100,29.3559,True,800,768
+ECC-256 (Classical),20.0,50,26.0373,False,64,0
+Kyber-512 (Post-Quantum),5.0,50,6.1811,True,800,768
+Kyber-512 (Post-Quantum),0.5,10,0.7991,True,800,768
+Proposed Hybrid (ECC + Kyber),30.0,200,35.956,True,864,768
+ECC-256 (Classical),1.0,50,3.3144,False,64,0
+ECC-256 (Classical),7.5,200,10.5422,False,64,0
+Kyber-512 (Post-Quantum),4.0,50,4.6313,True,800,768
+Kyber-512 (Post-Quantum),100.0,100,113.5936,True,800,768
+Proposed Hybrid (ECC + Kyber),0.75,20,1.785,True,864,768
+ECC-256 (Classical),30.0,100,37.45,False,64,0
+Proposed Hybrid (ECC + Kyber),100.0,10,117.6214,True,864,768
+Proposed Hybrid (ECC + Kyber),0.04882812,10,2.9853,True,864,768
+ECC-256 (Classical),0.09765625,20,2.4174,False,64,0
+ECC-256 (Classical),15.0,50,19.1396,False,64,0
+Proposed Hybrid (ECC + Kyber),75.0,100,87.875,True,864,768
+ECC-256 (Classical),20.0,10,24.8462,False,64,0
+Proposed Hybrid (ECC + Kyber),0.00976562,200,0.6305,True,864,768
+Proposed Hybrid (ECC + Kyber),3.0,10,4.3028,True,864,768
+ECC-256 (Classical),0.75,10,2.9398,False,64,0
+ECC-256 (Classical),25.0,20,31.279,False,64,0
+Kyber-512 (Post-Quantum),5.0,50,6.007,True,800,768
+Kyber-512 (Post-Quantum),0.09765625,50,0.15,True,800,768
+Proposed Hybrid (ECC + Kyber),3.0,10,4.2271,True,864,768
+ECC-256 (Classical),100.0,10,115.9704,False,64,0
+Proposed Hybrid (ECC + Kyber),20.0,10,24.4955,True,864,768
+ECC-256 (Classical),0.00976562,20,2.1511,False,64,0
+Proposed Hybrid (ECC + Kyber),50.0,10,59.6509,True,864,768
+ECC-256 (Classical),0.04882812,20,2.5445,False,64,0
+ECC-256 (Classical),2.0,10,4.4394,False,64,0
+Proposed Hybrid (ECC + Kyber),2.0,200,2.9482,True,864,768
+ECC-256 (Classical),4.0,10,6.7894,False,64,0
+Proposed Hybrid (ECC + Kyber),50.0,20,60.5417,True,864,768
+Proposed Hybrid (ECC + Kyber),3.0,20,3.7854,True,864,768
+Kyber-512 (Post-Quantum),1.5,200,1.7348,True,800,768
+Proposed Hybrid (ECC + Kyber),7.5,20,9.2064,True,864,768
+Proposed Hybrid (ECC + Kyber),0.09765625,200,0.8149,True,864,768
+Proposed Hybrid (ECC + Kyber),0.09765625,50,0.7572,True,864,768
+Kyber-512 (Post-Quantum),75.0,100,85.1512,True,800,768
+ECC-256 (Classical),15.0,100,19.6055,False,64,0
+Kyber-512 (Post-Quantum),5.0,200,5.4411,True,800,768
+Proposed Hybrid (ECC + Kyber),7.5,10,9.6645,True,864,768
+Proposed Hybrid (ECC + Kyber),3.0,20,4.3279,True,864,768
+Proposed Hybrid (ECC + Kyber),7.5,20,9.5924,True,864,768
+Kyber-512 (Post-Quantum),7.5,50,8.571,True,800,768
+Kyber-512 (Post-Quantum),3.0,100,3.5224,True,800,768
+ECC-256 (Classical),2.0,10,4.7631,False,64,0
+Proposed Hybrid (ECC + Kyber),30.0,200,36.3822,True,864,768
+ECC-256 (Classical),10.0,10,14.1225,False,64,0
+Kyber-512 (Post-Quantum),75.0,200,85.0152,True,800,768
+Kyber-512 (Post-Quantum),7.5,10,8.1591,True,800,768
+Proposed Hybrid (ECC + Kyber),30.0,20,36.5875,True,864,768
+Proposed Hybrid (ECC + Kyber),25.0,20,29.9398,True,864,768
+Kyber-512 (Post-Quantum),3.0,50,3.5826,True,800,768
+ECC-256 (Classical),0.5,10,2.724,False,64,0
+Kyber-512 (Post-Quantum),20.0,10,22.7377,True,800,768
+Proposed Hybrid (ECC + Kyber),2.0,20,2.8392,True,864,768
+ECC-256 (Classical),1.0,100,3.2934,False,64,0
+ECC-256 (Classical),0.5,50,3.0093,False,64,0
+Kyber-512 (Post-Quantum),75.0,100,83.7879,True,800,768
+Kyber-512 (Post-Quantum),15.0,50,17.2471,True,800,768
+Kyber-512 (Post-Quantum),75.0,20,81.8347,True,800,768
+Proposed Hybrid (ECC + Kyber),4.0,200,5.4254,True,864,768
+Kyber-512 (Post-Quantum),7.5,50,8.7672,True,800,768
+Proposed Hybrid (ECC + Kyber),100.0,100,118.9424,True,864,768
+Kyber-512 (Post-Quantum),2.0,100,2.2334,True,800,768
+ECC-256 (Classical),0.25,200,2.4259,False,64,0
+Proposed Hybrid (ECC + Kyber),30.0,10,35.6373,True,864,768
+Kyber-512 (Post-Quantum),15.0,20,17.1588,True,800,768
+Proposed Hybrid (ECC + Kyber),0.09765625,100,0.4922,True,864,768
+ECC-256 (Classical),100.0,50,117.2839,False,64,0
+ECC-256 (Classical),10.0,100,13.9736,False,64,0
+Kyber-512 (Post-Quantum),15.0,200,16.5469,True,800,768
+ECC-256 (Classical),10.0,200,13.6167,False,64,0
+Proposed Hybrid (ECC + Kyber),5.0,200,6.4887,True,864,768
+ECC-256 (Classical),1.5,50,3.9695,False,64,0
+ECC-256 (Classical),100.0,200,115.1101,False,64,0
+Kyber-512 (Post-Quantum),100.0,100,111.2313,True,800,768
+ECC-256 (Classical),10.0,10,13.9731,False,64,0
+Proposed Hybrid (ECC + Kyber),25.0,200,30.366,True,864,768
+Kyber-512 (Post-Quantum),50.0,20,55.4442,True,800,768
+ECC-256 (Classical),50.0,200,60.5136,False,64,0
+Kyber-512 (Post-Quantum),5.0,10,5.9348,True,800,768
+Proposed Hybrid (ECC + Kyber),0.09765625,10,2.4849,True,864,768
+Proposed Hybrid (ECC + Kyber),15.0,20,17.926,True,864,768
+Kyber-512 (Post-Quantum),15.0,100,16.9957,True,800,768
+ECC-256 (Classical),0.09765625,50,2.44,False,64,0
+Proposed Hybrid (ECC + Kyber),100.0,10,117.8917,True,864,768
+Proposed Hybrid (ECC + Kyber),0.75,20,1.5785,True,864,768
+Kyber-512 (Post-Quantum),30.0,100,34.0653,True,800,768
+Proposed Hybrid (ECC + Kyber),1.5,100,2.5188,True,864,768
+ECC-256 (Classical),10.0,100,14.1932,False,64,0
+Kyber-512 (Post-Quantum),75.0,20,83.0912,True,800,768
+Kyber-512 (Post-Quantum),1.0,20,1.1804,True,800,768
+ECC-256 (Classical),0.09765625,200,2.4698,False,64,0
+ECC-256 (Classical),1.0,100,3.2551,False,64,0
+Proposed Hybrid (ECC + Kyber),2.0,100,3.1625,True,864,768
+Kyber-512 (Post-Quantum),7.5,200,8.5016,True,800,768
+Kyber-512 (Post-Quantum),50.0,10,55.5546,True,800,768
+Proposed Hybrid (ECC + Kyber),0.75,50,1.678,True,864,768
+Proposed Hybrid (ECC + Kyber),50.0,10,59.9503,True,864,768
+ECC-256 (Classical),3.0,10,5.8228,False,64,0
+Proposed Hybrid (ECC + Kyber),5.0,20,6.3183,True,864,768
+Kyber-512 (Post-Quantum),50.0,100,56.9318,True,800,768
+Proposed Hybrid (ECC + Kyber),0.75,100,1.1833,True,864,768
+ECC-256 (Classical),0.75,200,3.0783,False,64,0
+ECC-256 (Classical),20.0,50,25.6328,False,64,0
+Kyber-512 (Post-Quantum),75.0,10,86.4104,True,800,768
+ECC-256 (Classical),0.00976562,100,2.3612,False,64,0
+Kyber-512 (Post-Quantum),100.0,100,113.6785,True,800,768
+Proposed Hybrid (ECC + Kyber),20.0,100,24.529,True,864,768
+ECC-256 (Classical),0.09765625,200,2.2641,False,64,0
+ECC-256 (Classical),1.5,50,3.9917,False,64,0
+Proposed Hybrid (ECC + Kyber),0.75,100,1.7328,True,864,768
+Proposed Hybrid (ECC + Kyber),20.0,200,24.4179,True,864,768
+Proposed Hybrid (ECC + Kyber),30.0,50,36.2429,True,864,768
+Proposed Hybrid (ECC + Kyber),0.04882812,100,0.7388,True,864,768
+Kyber-512 (Post-Quantum),100.0,20,113.8525,True,800,768
+Kyber-512 (Post-Quantum),0.04882812,100,0.12,True,800,768
+ECC-256 (Classical),0.25,20,2.8181,False,64,0
+Proposed Hybrid (ECC + Kyber),50.0,50,58.9178,True,864,768
+ECC-256 (Classical),75.0,20,87.689,False,64,0
+Proposed Hybrid (ECC + Kyber),1.0,10,1.7507,True,864,768
+Kyber-512 (Post-Quantum),30.0,20,34.1429,True,800,768
+Proposed Hybrid (ECC + Kyber),3.0,50,4.1481,True,864,768
+Kyber-512 (Post-Quantum),0.25,20,0.732,True,800,768
+Proposed Hybrid (ECC + Kyber),0.04882812,50,0.9188,True,864,768
+Proposed Hybrid (ECC + Kyber),4.0,20,5.6713,True,864,768
+ECC-256 (Classical),7.5,100,10.7414,False,64,0
+Kyber-512 (Post-Quantum),10.0,100,11.239,True,800,768
+Kyber-512 (Post-Quantum),0.09765625,10,0.1377,True,800,768
+Kyber-512 (Post-Quantum),5.0,100,5.7322,True,800,768
+ECC-256 (Classical),4.0,200,7.1766,False,64,0
+Proposed Hybrid (ECC + Kyber),0.09765625,100,0.5499,True,864,768
+Proposed Hybrid (ECC + Kyber),5.0,10,6.0772,True,864,768
+Kyber-512 (Post-Quantum),1.0,100,1.5296,True,800,768
+Kyber-512 (Post-Quantum),4.0,50,4.5238,True,800,768
+Proposed Hybrid (ECC + Kyber),20.0,50,24.1803,True,864,768
+ECC-256 (Classical),0.04882812,10,5.0136,False,64,0
+Kyber-512 (Post-Quantum),0.75,100,0.7713,True,800,768
+ECC-256 (Classical),0.00976562,100,2.6402,False,64,0
+Kyber-512 (Post-Quantum),3.0,20,3.4984,True,800,768
+Kyber-512 (Post-Quantum),0.09765625,50,0.4539,True,800,768
+Proposed Hybrid (ECC + Kyber),0.04882812,100,0.8179,True,864,768
+Proposed Hybrid (ECC + Kyber),1.5,100,2.4848,True,864,768
+ECC-256 (Classical),1.0,100,3.49,False,64,0
+ECC-256 (Classical),0.5,200,2.7053,False,64,0
+ECC-256 (Classical),0.00976562,50,2.2914,False,64,0
+Kyber-512 (Post-Quantum),10.0,20,11.6161,True,800,768
+Kyber-512 (Post-Quantum),0.25,10,0.4951,True,800,768
+ECC-256 (Classical),5.0,50,7.7447,False,64,0
+ECC-256 (Classical),0.5,20,3.0689,False,64,0
+ECC-256 (Classical),25.0,200,30.8082,False,64,0
+Proposed Hybrid (ECC + Kyber),5.0,20,6.4639,True,864,768
+Proposed Hybrid (ECC + Kyber),0.5,100,1.1188,True,864,768
+ECC-256 (Classical),0.09765625,10,2.1355,False,64,0
+Kyber-512 (Post-Quantum),50.0,100,56.9114,True,800,768
+Kyber-512 (Post-Quantum),0.5,20,0.6787,True,800,768
+ECC-256 (Classical),100.0,10,115.1909,False,64,0
+Proposed Hybrid (ECC + Kyber),75.0,50,88.5817,True,864,768
+ECC-256 (Classical),0.00976562,50,2.1331,False,64,0
+ECC-256 (Classical),3.0,10,5.7241,False,64,0
+ECC-256 (Classical),20.0,100,25.3359,False,64,0
+ECC-256 (Classical),0.09765625,200,2.6279,False,64,0
+Kyber-512 (Post-Quantum),4.0,20,4.8046,True,800,768
+Proposed Hybrid (ECC + Kyber),5.0,200,6.3262,True,864,768
+ECC-256 (Classical),0.75,100,3.2225,False,64,0
+ECC-256 (Classical),2.0,20,4.607,False,64,0
+Proposed Hybrid (ECC + Kyber),0.04882812,100,0.6535,True,864,768
+ECC-256 (Classical),10.0,100,14.2614,False,64,0
+Proposed Hybrid (ECC + Kyber),100.0,200,117.658,True,864,768
+Proposed Hybrid (ECC + Kyber),3.0,10,4.0853,True,864,768
+Proposed Hybrid (ECC + Kyber),1.0,20,1.7283,True,864,768
+Kyber-512 (Post-Quantum),100.0,10,114.0926,True,800,768
+ECC-256 (Classical),10.0,20,13.8237,False,64,0
+Proposed Hybrid (ECC + Kyber),0.25,100,1.2944,True,864,768
+Kyber-512 (Post-Quantum),75.0,10,83.2101,True,800,768
+ECC-256 (Classical),0.75,10,2.9584,False,64,0
+ECC-256 (Classical),0.5,10,2.7297,False,64,0
+ECC-256 (Classical),25.0,50,31.0609,False,64,0
+Proposed Hybrid (ECC + Kyber),5.0,20,6.5846,True,864,768
+Kyber-512 (Post-Quantum),0.25,10,0.3107,True,800,768
+Proposed Hybrid (ECC + Kyber),10.0,50,12.8859,True,864,768
+Kyber-512 (Post-Quantum),50.0,10,56.705,True,800,768
+Kyber-512 (Post-Quantum),15.0,200,17.6481,True,800,768
+ECC-256 (Classical),0.75,50,3.2715,False,64,0
+Proposed Hybrid (ECC + Kyber),2.0,10,2.9691,True,864,768
+ECC-256 (Classical),25.0,10,30.8191,False,64,0
+ECC-256 (Classical),0.00976562,20,2.166,False,64,0
+Proposed Hybrid (ECC + Kyber),0.04882812,200,0.7338,True,864,768
+Kyber-512 (Post-Quantum),10.0,20,11.3573,True,800,768
+ECC-256 (Classical),4.0,50,7.3672,False,64,0
+ECC-256 (Classical),50.0,50,57.8606,False,64,0
+Proposed Hybrid (ECC + Kyber),0.75,20,1.5305,True,864,768
+ECC-256 (Classical),0.04882812,100,2.5725,False,64,0
+ECC-256 (Classical),3.0,50,5.477,False,64,0
+ECC-256 (Classical),30.0,100,36.4614,False,64,0
+ECC-256 (Classical),3.0,200,5.8688,False,64,0
+Proposed Hybrid (ECC + Kyber),15.0,50,19.6408,True,864,768
+ECC-256 (Classical),1.0,200,3.3485,False,64,0
+Kyber-512 (Post-Quantum),0.5,10,0.9045,True,800,768
+Kyber-512 (Post-Quantum),100.0,10,112.4584,True,800,768
+Proposed Hybrid (ECC + Kyber),0.00976562,100,0.6515,True,864,768
+Kyber-512 (Post-Quantum),1.5,100,1.75,True,800,768
+Proposed Hybrid (ECC + Kyber),0.04882812,20,0.6992,True,864,768
+Proposed Hybrid (ECC + Kyber),25.0,100,30.3046,True,864,768
+Proposed Hybrid (ECC + Kyber),5.0,100,6.6368,True,864,768
+ECC-256 (Classical),0.5,100,2.9109,False,64,0
+ECC-256 (Classical),50.0,200,57.6684,False,64,0
+Kyber-512 (Post-Quantum),1.5,50,2.0069,True,800,768
+Proposed Hybrid (ECC + Kyber),4.0,100,5.4619,True,864,768
+ECC-256 (Classical),15.0,50,19.2599,False,64,0
+ECC-256 (Classical),0.09765625,20,2.4499,False,64,0
+Kyber-512 (Post-Quantum),0.75,100,0.78,True,800,768
+ECC-256 (Classical),4.0,100,6.3708,False,64,0
+Kyber-512 (Post-Quantum),1.0,100,1.1745,True,800,768
+ECC-256 (Classical),15.0,50,20.1239,False,64,0
+ECC-256 (Classical),3.0,200,5.9405,False,64,0
+ECC-256 (Classical),1.0,50,3.5547,False,64,0
+Proposed Hybrid (ECC + Kyber),5.0,100,6.6422,True,864,768
+Kyber-512 (Post-Quantum),0.04882812,50,0.2444,True,800,768
+Proposed Hybrid (ECC + Kyber),15.0,200,18.1403,True,864,768
+ECC-256 (Classical),30.0,20,35.7476,False,64,0
+ECC-256 (Classical),0.5,10,2.9422,False,64,0
+ECC-256 (Classical),0.04882812,20,2.405,False,64,0
+Proposed Hybrid (ECC + Kyber),100.0,10,120.2315,True,864,768
+ECC-256 (Classical),50.0,50,60.1255,False,64,0
+ECC-256 (Classical),100.0,100,117.3823,False,64,0
+ECC-256 (Classical),0.09765625,50,2.5747,False,64,0
+Proposed Hybrid (ECC + Kyber),50.0,100,59.9152,True,864,768
+ECC-256 (Classical),7.5,100,10.7199,False,64,0
+ECC-256 (Classical),5.0,20,8.2095,False,64,0
+Kyber-512 (Post-Quantum),2.0,50,2.4255,True,800,768
+ECC-256 (Classical),75.0,200,88.3236,False,64,0
+Kyber-512 (Post-Quantum),100.0,50,110.3739,True,800,768
+Kyber-512 (Post-Quantum),0.04882812,10,0.3048,True,800,768
+Proposed Hybrid (ECC + Kyber),10.0,20,12.7244,True,864,768
+ECC-256 (Classical),100.0,200,115.9637,False,64,0
+Kyber-512 (Post-Quantum),7.5,50,8.2595,True,800,768
+Kyber-512 (Post-Quantum),50.0,200,55.8639,True,800,768
+ECC-256 (Classical),7.5,50,11.2742,False,64,0
+ECC-256 (Classical),0.00976562,50,2.3442,False,64,0
+Kyber-512 (Post-Quantum),20.0,200,22.7382,True,800,768
+ECC-256 (Classical),0.75,10,2.5276,False,64,0
+Proposed Hybrid (ECC + Kyber),1.5,50,2.5758,True,864,768
+Proposed Hybrid (ECC + Kyber),0.04882812,20,0.3999,True,864,768
+ECC-256 (Classical),7.5,50,11.0825,False,64,0
+ECC-256 (Classical),5.0,200,8.3196,False,64,0
+Proposed Hybrid (ECC + Kyber),5.0,200,6.8936,True,864,768
+Kyber-512 (Post-Quantum),20.0,200,23.4033,True,800,768
+ECC-256 (Classical),0.75,100,3.2615,False,64,0
+Proposed Hybrid (ECC + Kyber),1.5,10,2.4874,True,864,768
+Kyber-512 (Post-Quantum),20.0,10,22.8126,True,800,768
+Proposed Hybrid (ECC + Kyber),0.5,50,1.1879,True,864,768
+ECC-256 (Classical),0.75,50,3.3748,False,64,0
+Proposed Hybrid (ECC + Kyber),0.5,10,1.2687,True,864,768
+Kyber-512 (Post-Quantum),5.0,10,5.6566,True,800,768
+Kyber-512 (Post-Quantum),50.0,10,54.8779,True,800,768
+ECC-256 (Classical),3.0,50,6.063,False,64,0
+Proposed Hybrid (ECC + Kyber),10.0,100,12.3764,True,864,768
+Proposed Hybrid (ECC + Kyber),4.0,20,5.6868,True,864,768
+ECC-256 (Classical),75.0,50,88.1673,False,64,0
+Kyber-512 (Post-Quantum),50.0,20,55.6696,True,800,768
+Proposed Hybrid (ECC + Kyber),0.5,20,1.4654,True,864,768
+Kyber-512 (Post-Quantum),0.00976562,200,0.3134,True,800,768
+Kyber-512 (Post-Quantum),0.75,200,0.7668,True,800,768
+Proposed Hybrid (ECC + Kyber),75.0,20,86.4051,True,864,768
+Proposed Hybrid (ECC + Kyber),0.5,50,1.0919,True,864,768
+Kyber-512 (Post-Quantum),0.09765625,20,0.3506,True,800,768
+Kyber-512 (Post-Quantum),0.09765625,50,1.6686,True,800,768
+Kyber-512 (Post-Quantum),0.09765625,50,2.1916,True,800,768
+Kyber-512 (Post-Quantum),10.0,20,10.8839,True,800,768
+Kyber-512 (Post-Quantum),20.0,100,22.3505,True,800,768
+Proposed Hybrid (ECC + Kyber),20.0,200,24.1907,True,864,768
+Kyber-512 (Post-Quantum),1.5,20,2.1284,True,800,768
+Kyber-512 (Post-Quantum),3.0,10,3.6784,True,800,768
+ECC-256 (Classical),2.0,10,4.3946,False,64,0
+Proposed Hybrid (ECC + Kyber),0.75,10,1.8178,True,864,768
+Proposed Hybrid (ECC + Kyber),0.09765625,50,1.0842,True,864,768
+Proposed Hybrid (ECC + Kyber),10.0,20,12.3914,True,864,768
+ECC-256 (Classical),10.0,20,13.9637,False,64,0
+Proposed Hybrid (ECC + Kyber),1.0,100,1.8965,True,864,768
+Kyber-512 (Post-Quantum),30.0,200,33.4815,True,800,768
+Kyber-512 (Post-Quantum),0.25,10,0.3207,True,800,768
+Kyber-512 (Post-Quantum),50.0,200,56.6348,True,800,768
+Kyber-512 (Post-Quantum),10.0,10,11.5833,True,800,768
+Kyber-512 (Post-Quantum),100.0,200,112.2672,True,800,768
+ECC-256 (Classical),0.75,50,3.1975,False,64,0
+Kyber-512 (Post-Quantum),20.0,10,22.6604,True,800,768
+Proposed Hybrid (ECC + Kyber),2.0,10,2.8117,True,864,768
+ECC-256 (Classical),30.0,100,36.3947,False,64,0
+ECC-256 (Classical),0.75,100,3.277,False,64,0
+Kyber-512 (Post-Quantum),2.0,100,2.3612,True,800,768
+ECC-256 (Classical),50.0,10,61.5084,False,64,0
+Proposed Hybrid (ECC + Kyber),0.25,10,0.8383,True,864,768
+Proposed Hybrid (ECC + Kyber),50.0,20,60.5843,True,864,768
+Proposed Hybrid (ECC + Kyber),0.04882812,100,0.5448,True,864,768
+ECC-256 (Classical),20.0,200,25.5727,False,64,0
+ECC-256 (Classical),20.0,50,24.6032,False,64,0
+Proposed Hybrid (ECC + Kyber),0.04882812,200,0.8891,True,864,768
+ECC-256 (Classical),50.0,200,60.902,False,64,0
+ECC-256 (Classical),0.75,20,3.3486,False,64,0
+ECC-256 (Classical),1.0,20,3.0139,False,64,0
+Proposed Hybrid (ECC + Kyber),10.0,20,12.8643,True,864,768
+Kyber-512 (Post-Quantum),0.5,200,0.6023,True,800,768
+Kyber-512 (Post-Quantum),0.09765625,10,0.4804,True,800,768
+Kyber-512 (Post-Quantum),30.0,50,32.421,True,800,768
+Proposed Hybrid (ECC + Kyber),0.00976562,200,0.6202,True,864,768
+Kyber-512 (Post-Quantum),10.0,10,11.5787,True,800,768
+ECC-256 (Classical),50.0,10,60.74,False,64,0
+Kyber-512 (Post-Quantum),50.0,10,57.3974,True,800,768
+Kyber-512 (Post-Quantum),10.0,50,10.8929,True,800,768
+Proposed Hybrid (ECC + Kyber),100.0,100,118.2968,True,864,768
+ECC-256 (Classical),2.0,100,4.5685,False,64,0
+Proposed Hybrid (ECC + Kyber),75.0,200,89.0257,True,864,768
+ECC-256 (Classical),4.0,20,6.8446,False,64,0
+Kyber-512 (Post-Quantum),20.0,50,23.3732,True,800,768
+Kyber-512 (Post-Quantum),3.0,50,3.5556,True,800,768
+ECC-256 (Classical),20.0,10,26.1085,False,64,0
+Kyber-512 (Post-Quantum),15.0,50,17.7083,True,800,768
+Proposed Hybrid (ECC + Kyber),10.0,200,12.7243,True,864,768
+Proposed Hybrid (ECC + Kyber),10.0,100,12.6223,True,864,768
+Proposed Hybrid (ECC + Kyber),5.0,10,6.5714,True,864,768
+ECC-256 (Classical),25.0,100,30.8631,False,64,0
+ECC-256 (Classical),25.0,200,31.5438,False,64,0
+ECC-256 (Classical),1.0,10,3.7487,False,64,0
+ECC-256 (Classical),0.04882812,100,2.561,False,64,0
+Kyber-512 (Post-Quantum),15.0,200,16.6615,True,800,768
+Proposed Hybrid (ECC + Kyber),100.0,10,120.2136,True,864,768
+ECC-256 (Classical),75.0,100,88.7849,False,64,0
+Proposed Hybrid (ECC + Kyber),20.0,200,24.0923,True,864,768
+Kyber-512 (Post-Quantum),2.0,10,2.4771,True,800,768
+ECC-256 (Classical),0.00976562,100,2.413,False,64,0
+Proposed Hybrid (ECC + Kyber),1.5,20,2.612,True,864,768
+Proposed Hybrid (ECC + Kyber),1.0,50,1.802,True,864,768
+ECC-256 (Classical),0.00976562,100,2.3275,False,64,0
+ECC-256 (Classical),75.0,10,88.5154,False,64,0
+Kyber-512 (Post-Quantum),3.0,50,3.8626,True,800,768
+Kyber-512 (Post-Quantum),7.5,50,8.5463,True,800,768
+Kyber-512 (Post-Quantum),25.0,200,28.7386,True,800,768
+ECC-256 (Classical),50.0,10,58.4772,False,64,0
+Proposed Hybrid (ECC + Kyber),5.0,200,6.526,True,864,768
+Kyber-512 (Post-Quantum),75.0,200,83.9671,True,800,768
+Kyber-512 (Post-Quantum),0.09765625,50,0.3285,True,800,768
+Proposed Hybrid (ECC + Kyber),2.0,50,2.918,True,864,768
+ECC-256 (Classical),3.0,20,5.3505,False,64,0
+ECC-256 (Classical),25.0,20,31.3726,False,64,0
+Proposed Hybrid (ECC + Kyber),75.0,100,86.9919,True,864,768
+Proposed Hybrid (ECC + Kyber),4.0,20,5.6132,True,864,768
+Kyber-512 (Post-Quantum),3.0,50,3.5464,True,800,768
+Proposed Hybrid (ECC + Kyber),7.5,100,9.9018,True,864,768
+Kyber-512 (Post-Quantum),50.0,20,56.4608,True,800,768
+Proposed Hybrid (ECC + Kyber),1.5,200,2.5017,True,864,768
+Kyber-512 (Post-Quantum),5.0,200,5.2719,True,800,768
+ECC-256 (Classical),0.75,200,3.1131,False,64,0
+ECC-256 (Classical),2.0,200,4.7954,False,64,0
+ECC-256 (Classical),4.0,10,6.687,False,64,0
+Kyber-512 (Post-Quantum),3.0,100,3.7641,True,800,768
+Proposed Hybrid (ECC + Kyber),5.0,50,6.43,True,864,768
+Proposed Hybrid (ECC + Kyber),20.0,10,25.095,True,864,768
+Proposed Hybrid (ECC + Kyber),50.0,200,61.3528,True,864,768
+Proposed Hybrid (ECC + Kyber),25.0,10,30.6267,True,864,768
+Kyber-512 (Post-Quantum),7.5,200,8.0961,True,800,768
+ECC-256 (Classical),0.5,20,3.0405,False,64,0
+Proposed Hybrid (ECC + Kyber),4.0,100,5.8524,True,864,768
+Proposed Hybrid (ECC + Kyber),0.5,50,0.9515,True,864,768
+Kyber-512 (Post-Quantum),0.75,10,0.755,True,800,768
+ECC-256 (Classical),4.0,10,7.4357,False,64,0
+ECC-256 (Classical),15.0,50,19.566,False,64,0
+ECC-256 (Classical),0.75,100,3.0648,False,64,0
+Kyber-512 (Post-Quantum),0.5,200,0.603,True,800,768
+ECC-256 (Classical),20.0,100,24.9598,False,64,0
+ECC-256 (Classical),0.04882812,200,2.3114,False,64,0
+ECC-256 (Classical),25.0,20,29.7741,False,64,0
+ECC-256 (Classical),0.00976562,20,4.0304,False,64,0
+ECC-256 (Classical),50.0,50,59.0246,False,64,0
+Kyber-512 (Post-Quantum),0.09765625,10,0.4178,True,800,768
+Kyber-512 (Post-Quantum),25.0,50,27.9657,True,800,768
+Kyber-512 (Post-Quantum),0.5,50,0.6455,True,800,768
+ECC-256 (Classical),7.5,10,11.0562,False,64,0
+ECC-256 (Classical),1.5,20,4.002,False,64,0
+Kyber-512 (Post-Quantum),0.75,10,0.7758,True,800,768
+Kyber-512 (Post-Quantum),100.0,10,113.0555,True,800,768
+ECC-256 (Classical),30.0,200,36.4771,False,64,0
+Proposed Hybrid (ECC + Kyber),75.0,10,91.0366,True,864,768
+Kyber-512 (Post-Quantum),0.04882812,10,0.3848,True,800,768
+Kyber-512 (Post-Quantum),0.25,200,0.3425,True,800,768
+Kyber-512 (Post-Quantum),100.0,10,112.3024,True,800,768
+Proposed Hybrid (ECC + Kyber),10.0,10,12.0345,True,864,768
+ECC-256 (Classical),0.5,100,2.847,False,64,0
+ECC-256 (Classical),25.0,200,30.8622,False,64,0
+Proposed Hybrid (ECC + Kyber),20.0,20,25.0221,True,864,768
+Proposed Hybrid (ECC + Kyber),1.0,50,1.9831,True,864,768
+ECC-256 (Classical),10.0,50,13.7525,False,64,0
+Kyber-512 (Post-Quantum),0.04882812,200,0.3993,True,800,768
+ECC-256 (Classical),1.5,10,3.8844,False,64,0
+Proposed Hybrid (ECC + Kyber),0.09765625,10,2.7467,True,864,768
+Proposed Hybrid (ECC + Kyber),0.25,50,0.8687,True,864,768
+Kyber-512 (Post-Quantum),1.5,100,1.8251,True,800,768
+Kyber-512 (Post-Quantum),0.75,10,1.0415,True,800,768
+Kyber-512 (Post-Quantum),5.0,50,5.7428,True,800,768
+ECC-256 (Classical),0.04882812,10,2.289,False,64,0
+Kyber-512 (Post-Quantum),0.75,50,1.3067,True,800,768
+Kyber-512 (Post-Quantum),2.0,10,2.1141,True,800,768
+ECC-256 (Classical),4.0,20,6.4634,False,64,0
+Proposed Hybrid (ECC + Kyber),2.0,100,3.2791,True,864,768
+Proposed Hybrid (ECC + Kyber),20.0,100,24.4552,True,864,768
+ECC-256 (Classical),0.5,10,2.8126,False,64,0
+Proposed Hybrid (ECC + Kyber),0.25,100,0.7467,True,864,768
+Proposed Hybrid (ECC + Kyber),15.0,20,18.4029,True,864,768
+Proposed Hybrid (ECC + Kyber),7.5,50,9.8922,True,864,768
+Kyber-512 (Post-Quantum),0.5,100,0.7531,True,800,768
+Kyber-512 (Post-Quantum),0.25,100,0.5448,True,800,768
+Proposed Hybrid (ECC + Kyber),4.0,10,5.4166,True,864,768
+Proposed Hybrid (ECC + Kyber),25.0,200,28.8197,True,864,768
+Proposed Hybrid (ECC + Kyber),4.0,200,5.1397,True,864,768
+Kyber-512 (Post-Quantum),75.0,10,83.6423,True,800,768
+ECC-256 (Classical),5.0,100,7.9054,False,64,0
+ECC-256 (Classical),30.0,200,38.1966,False,64,0
+Kyber-512 (Post-Quantum),25.0,100,28.2396,True,800,768
+Kyber-512 (Post-Quantum),0.75,10,0.9279,True,800,768
+Proposed Hybrid (ECC + Kyber),2.0,10,3.1557,True,864,768
+Proposed Hybrid (ECC + Kyber),1.5,200,2.1901,True,864,768
+Kyber-512 (Post-Quantum),0.09765625,100,0.4522,True,800,768
+Kyber-512 (Post-Quantum),15.0,10,16.7718,True,800,768
+ECC-256 (Classical),20.0,10,25.3739,False,64,0
+ECC-256 (Classical),7.5,100,10.9205,False,64,0
+Proposed Hybrid (ECC + Kyber),0.09765625,200,0.7643,True,864,768
+ECC-256 (Classical),25.0,200,30.7231,False,64,0
+ECC-256 (Classical),4.0,50,6.7086,False,64,0
+Kyber-512 (Post-Quantum),1.5,100,1.607,True,800,768
+Proposed Hybrid (ECC + Kyber),20.0,50,24.0191,True,864,768
+ECC-256 (Classical),15.0,10,19.5655,False,64,0
+Proposed Hybrid (ECC + Kyber),4.0,50,5.2216,True,864,768
+Proposed Hybrid (ECC + Kyber),3.0,200,4.1251,True,864,768
+ECC-256 (Classical),0.75,100,3.2169,False,64,0
+Kyber-512 (Post-Quantum),10.0,10,11.2017,True,800,768
+Kyber-512 (Post-Quantum),7.5,20,8.4415,True,800,768
+ECC-256 (Classical),1.0,50,3.4523,False,64,0
+ECC-256 (Classical),100.0,200,116.7913,False,64,0
+Proposed Hybrid (ECC + Kyber),15.0,100,17.9739,True,864,768
+Proposed Hybrid (ECC + Kyber),20.0,10,23.9663,True,864,768
+Kyber-512 (Post-Quantum),0.04882812,200,0.2964,True,800,768
+ECC-256 (Classical),0.75,200,3.0054,False,64,0
+Kyber-512 (Post-Quantum),0.5,10,0.592,True,800,768
+Kyber-512 (Post-Quantum),4.0,200,4.3904,True,800,768
+Proposed Hybrid (ECC + Kyber),10.0,200,12.4686,True,864,768
+Kyber-512 (Post-Quantum),4.0,50,4.4626,True,800,768
+Kyber-512 (Post-Quantum),0.5,20,0.4473,True,800,768
+Proposed Hybrid (ECC + Kyber),25.0,50,29.4924,True,864,768
+Proposed Hybrid (ECC + Kyber),30.0,50,35.987,True,864,768
+ECC-256 (Classical),1.0,20,3.2412,False,64,0
+Proposed Hybrid (ECC + Kyber),75.0,50,88.0765,True,864,768
+Proposed Hybrid (ECC + Kyber),100.0,20,120.6862,True,864,768
+Proposed Hybrid (ECC + Kyber),30.0,50,36.4685,True,864,768
+Proposed Hybrid (ECC + Kyber),20.0,200,24.5281,True,864,768
+Kyber-512 (Post-Quantum),10.0,200,11.5757,True,800,768
+ECC-256 (Classical),0.00976562,200,3.4924,False,64,0
+Kyber-512 (Post-Quantum),0.04882812,20,0.2048,True,800,768
+ECC-256 (Classical),2.0,20,4.4934,False,64,0
+Proposed Hybrid (ECC + Kyber),3.0,20,4.5403,True,864,768
+Proposed Hybrid (ECC + Kyber),0.25,200,1.0019,True,864,768
+Proposed Hybrid (ECC + Kyber),30.0,20,35.6913,True,864,768
+Proposed Hybrid (ECC + Kyber),25.0,50,29.7341,True,864,768
+Kyber-512 (Post-Quantum),0.04882812,100,0.12,True,800,768
+ECC-256 (Classical),30.0,10,37.3291,False,64,0
+Proposed Hybrid (ECC + Kyber),2.0,20,3.2526,True,864,768
+Proposed Hybrid (ECC + Kyber),15.0,20,17.8038,True,864,768
+Proposed Hybrid (ECC + Kyber),100.0,50,116.5016,True,864,768
+Kyber-512 (Post-Quantum),1.0,50,1.2052,True,800,768
+ECC-256 (Classical),0.75,10,3.4181,False,64,0
+ECC-256 (Classical),0.25,100,2.529,False,64,0
+Proposed Hybrid (ECC + Kyber),10.0,50,12.4341,True,864,768
+Kyber-512 (Post-Quantum),2.0,10,2.4962,True,800,768
+ECC-256 (Classical),15.0,20,19.7383,False,64,0
+Proposed Hybrid (ECC + Kyber),0.04882812,200,0.817,True,864,768
+Kyber-512 (Post-Quantum),50.0,200,57.4161,True,800,768
+ECC-256 (Classical),25.0,20,31.414,False,64,0
+Proposed Hybrid (ECC + Kyber),25.0,10,30.5043,True,864,768
+Kyber-512 (Post-Quantum),7.5,10,8.8267,True,800,768
+Proposed Hybrid (ECC + Kyber),1.5,20,2.3397,True,864,768
+Proposed Hybrid (ECC + Kyber),1.0,200,1.9659,True,864,768
+Proposed Hybrid (ECC + Kyber),20.0,200,24.9181,True,864,768
+Proposed Hybrid (ECC + Kyber),15.0,20,18.3808,True,864,768
+ECC-256 (Classical),75.0,200,90.4174,False,64,0
+ECC-256 (Classical),4.0,100,6.8188,False,64,0
+Proposed Hybrid (ECC + Kyber),7.5,50,9.4904,True,864,768
+Proposed Hybrid (ECC + Kyber),25.0,50,30.0341,True,864,768
+Kyber-512 (Post-Quantum),25.0,100,29.2301,True,800,768
+Proposed Hybrid (ECC + Kyber),1.0,50,1.926,True,864,768
+ECC-256 (Classical),0.09765625,10,2.6691,False,64,0
+ECC-256 (Classical),100.0,10,116.7959,False,64,0
+Proposed Hybrid (ECC + Kyber),100.0,20,117.963,True,864,768
+Proposed Hybrid (ECC + Kyber),30.0,100,36.1789,True,864,768
+ECC-256 (Classical),0.09765625,20,3.3893,False,64,0
+ECC-256 (Classical),2.0,200,4.641,False,64,0
+Kyber-512 (Post-Quantum),50.0,20,55.3256,True,800,768
+Kyber-512 (Post-Quantum),7.5,100,8.7077,True,800,768
+Proposed Hybrid (ECC + Kyber),0.00976562,100,0.6735,True,864,768
+ECC-256 (Classical),0.09765625,200,2.4235,False,64,0
+Proposed Hybrid (ECC + Kyber),0.09765625,50,0.9745,True,864,768
+Kyber-512 (Post-Quantum),0.09765625,50,0.4241,True,800,768
+ECC-256 (Classical),0.00976562,100,2.2317,False,64,0
+Proposed Hybrid (ECC + Kyber),30.0,50,35.9822,True,864,768
+Proposed Hybrid (ECC + Kyber),0.5,50,1.5497,True,864,768
+ECC-256 (Classical),100.0,50,114.5103,False,64,0
+ECC-256 (Classical),30.0,200,36.8431,False,64,0
+Proposed Hybrid (ECC + Kyber),75.0,100,89.2395,True,864,768
+Kyber-512 (Post-Quantum),30.0,10,33.9951,True,800,768
+Kyber-512 (Post-Quantum),5.0,20,6.1085,True,800,768
+ECC-256 (Classical),100.0,200,117.9186,False,64,0
+ECC-256 (Classical),2.0,20,4.7078,False,64,0
+ECC-256 (Classical),0.75,200,3.3851,False,64,0
+Proposed Hybrid (ECC + Kyber),30.0,100,34.9305,True,864,768
+Kyber-512 (Post-Quantum),30.0,10,33.5346,True,800,768
+Kyber-512 (Post-Quantum),1.0,200,1.1595,True,800,768
+ECC-256 (Classical),4.0,50,6.8271,False,64,0
+ECC-256 (Classical),3.0,200,5.6245,False,64,0
+Kyber-512 (Post-Quantum),1.0,50,1.0525,True,800,768
+ECC-256 (Classical),3.0,200,5.8324,False,64,0
+Kyber-512 (Post-Quantum),50.0,200,56.9557,True,800,768
+Kyber-512 (Post-Quantum),0.75,10,0.6094,True,800,768
+Proposed Hybrid (ECC + Kyber),1.5,20,2.4082,True,864,768
+Proposed Hybrid (ECC + Kyber),5.0,20,6.3096,True,864,768
+Kyber-512 (Post-Quantum),4.0,100,4.2886,True,800,768
+ECC-256 (Classical),20.0,200,25.5615,False,64,0
+ECC-256 (Classical),0.75,200,3.3365,False,64,0
+ECC-256 (Classical),0.5,200,2.6138,False,64,0
+Proposed Hybrid (ECC + Kyber),2.0,10,3.0411,True,864,768
+Proposed Hybrid (ECC + Kyber),25.0,10,30.1965,True,864,768
+Proposed Hybrid (ECC + Kyber),50.0,100,59.707,True,864,768
+Proposed Hybrid (ECC + Kyber),2.0,200,3.0579,True,864,768
+Kyber-512 (Post-Quantum),20.0,20,21.8099,True,800,768
+ECC-256 (Classical),50.0,50,60.9859,False,64,0
+Proposed Hybrid (ECC + Kyber),15.0,200,18.6505,True,864,768
+Proposed Hybrid (ECC + Kyber),0.00976562,20,0.7385,True,864,768
+Kyber-512 (Post-Quantum),25.0,20,28.5164,True,800,768
+Proposed Hybrid (ECC + Kyber),50.0,20,60.6293,True,864,768
+ECC-256 (Classical),20.0,50,25.4013,False,64,0
+Kyber-512 (Post-Quantum),0.09765625,50,0.4312,True,800,768
+Kyber-512 (Post-Quantum),1.0,200,0.9886,True,800,768
+Proposed Hybrid (ECC + Kyber),0.04882812,10,0.9255,True,864,768
+Proposed Hybrid (ECC + Kyber),25.0,50,30.095,True,864,768
+Proposed Hybrid (ECC + Kyber),0.75,100,1.7365,True,864,768
+Proposed Hybrid (ECC + Kyber),7.5,50,9.2154,True,864,768
+Kyber-512 (Post-Quantum),25.0,50,27.331,True,800,768
+Kyber-512 (Post-Quantum),1.5,200,1.621,True,800,768
+Proposed Hybrid (ECC + Kyber),20.0,100,24.9725,True,864,768
+ECC-256 (Classical),0.00976562,200,2.2103,False,64,0
+ECC-256 (Classical),2.0,20,4.648,False,64,0
+Kyber-512 (Post-Quantum),0.75,20,0.7518,True,800,768
+Kyber-512 (Post-Quantum),1.5,100,1.6399,True,800,768
+Proposed Hybrid (ECC + Kyber),0.25,100,0.8402,True,864,768
+ECC-256 (Classical),0.75,100,3.1772,False,64,0
+ECC-256 (Classical),1.5,10,3.9335,False,64,0
+ECC-256 (Classical),100.0,200,116.8643,False,64,0
+ECC-256 (Classical),50.0,20,60.8212,False,64,0
+Proposed Hybrid (ECC + Kyber),25.0,100,31.1769,True,864,768
+Proposed Hybrid (ECC + Kyber),50.0,10,59.4196,True,864,768
+Kyber-512 (Post-Quantum),0.09765625,20,0.12,True,800,768
+ECC-256 (Classical),20.0,100,25.3885,False,64,0
+ECC-256 (Classical),0.5,200,3.034,False,64,0
+Kyber-512 (Post-Quantum),75.0,200,85.1086,True,800,768
+Proposed Hybrid (ECC + Kyber),15.0,200,18.8459,True,864,768
+Kyber-512 (Post-Quantum),0.09765625,20,0.2048,True,800,768
+ECC-256 (Classical),25.0,100,31.2159,False,64,0
+ECC-256 (Classical),75.0,10,86.8092,False,64,0
+Proposed Hybrid (ECC + Kyber),0.04882812,200,0.7391,True,864,768
+Proposed Hybrid (ECC + Kyber),0.09765625,100,0.906,True,864,768
+Proposed Hybrid (ECC + Kyber),100.0,100,120.2892,True,864,768
+ECC-256 (Classical),10.0,50,13.6974,False,64,0
+Kyber-512 (Post-Quantum),20.0,100,22.0992,True,800,768
+ECC-256 (Classical),50.0,200,59.1844,False,64,0
+Kyber-512 (Post-Quantum),1.5,10,1.8897,True,800,768
+Kyber-512 (Post-Quantum),75.0,200,84.1435,True,800,768
+Proposed Hybrid (ECC + Kyber),0.00976562,200,1.6916,True,864,768
+Proposed Hybrid (ECC + Kyber),100.0,20,119.216,True,864,768
+Kyber-512 (Post-Quantum),0.25,20,0.2814,True,800,768
+Kyber-512 (Post-Quantum),100.0,200,112.0049,True,800,768
+Proposed Hybrid (ECC + Kyber),50.0,50,60.7627,True,864,768
+ECC-256 (Classical),2.0,100,4.3306,False,64,0
+Kyber-512 (Post-Quantum),20.0,20,22.9584,True,800,768
+Kyber-512 (Post-Quantum),30.0,200,33.7378,True,800,768
+Proposed Hybrid (ECC + Kyber),5.0,100,6.7425,True,864,768
+Proposed Hybrid (ECC + Kyber),0.5,10,1.2749,True,864,768
+ECC-256 (Classical),0.75,10,3.4421,False,64,0
+Kyber-512 (Post-Quantum),25.0,100,28.3775,True,800,768
+Kyber-512 (Post-Quantum),0.04882812,20,0.12,True,800,768
+ECC-256 (Classical),0.00976562,10,3.6373,False,64,0
+Proposed Hybrid (ECC + Kyber),5.0,10,6.604,True,864,768
+Kyber-512 (Post-Quantum),0.04882812,100,0.0667,True,800,768
+ECC-256 (Classical),75.0,10,87.5345,False,64,0
+Kyber-512 (Post-Quantum),100.0,100,115.3599,True,800,768
+ECC-256 (Classical),25.0,50,31.1188,False,64,0
+Proposed Hybrid (ECC + Kyber),0.04882812,200,0.5987,True,864,768
+ECC-256 (Classical),0.04882812,50,2.3453,False,64,0
+Kyber-512 (Post-Quantum),0.75,10,1.0179,True,800,768
+Proposed Hybrid (ECC + Kyber),7.5,100,9.2592,True,864,768
+ECC-256 (Classical),1.0,200,3.4449,False,64,0
+Kyber-512 (Post-Quantum),0.09765625,200,0.2025,True,800,768
+Kyber-512 (Post-Quantum),30.0,200,33.1158,True,800,768
+ECC-256 (Classical),1.5,200,4.2845,False,64,0
+Proposed Hybrid (ECC + Kyber),15.0,100,18.5825,True,864,768
+Proposed Hybrid (ECC + Kyber),25.0,10,30.1595,True,864,768
+Kyber-512 (Post-Quantum),0.09765625,200,0.2189,True,800,768
+Proposed Hybrid (ECC + Kyber),2.0,200,3.0858,True,864,768
+Kyber-512 (Post-Quantum),2.0,100,2.1054,True,800,768
+Proposed Hybrid (ECC + Kyber),4.0,100,5.2308,True,864,768
+ECC-256 (Classical),15.0,200,19.2623,False,64,0
+Proposed Hybrid (ECC + Kyber),7.5,20,9.5229,True,864,768
+Kyber-512 (Post-Quantum),1.5,50,2.0299,True,800,768
+ECC-256 (Classical),0.00976562,50,2.2612,False,64,0
+ECC-256 (Classical),7.5,50,10.77,False,64,0
+ECC-256 (Classical),4.0,50,6.8557,False,64,0
+ECC-256 (Classical),50.0,50,61.0898,False,64,0
+Proposed Hybrid (ECC + Kyber),1.0,100,1.7484,True,864,768
+Proposed Hybrid (ECC + Kyber),1.0,20,1.8365,True,864,768
+ECC-256 (Classical),1.5,20,4.1603,False,64,0
+ECC-256 (Classical),75.0,50,88.6665,False,64,0
+Proposed Hybrid (ECC + Kyber),0.09765625,100,3.4041,True,864,768
+Kyber-512 (Post-Quantum),0.04882812,100,0.0772,True,800,768
+Kyber-512 (Post-Quantum),50.0,50,55.4294,True,800,768
+Kyber-512 (Post-Quantum),0.75,200,0.7748,True,800,768
+Proposed Hybrid (ECC + Kyber),0.5,10,1.397,True,864,768
+Proposed Hybrid (ECC + Kyber),10.0,100,12.7213,True,864,768
+ECC-256 (Classical),0.75,100,3.1928,False,64,0
+Kyber-512 (Post-Quantum),25.0,100,28.1198,True,800,768
+Proposed Hybrid (ECC + Kyber),1.0,100,1.8064,True,864,768
+Kyber-512 (Post-Quantum),0.25,50,0.3395,True,800,768
+ECC-256 (Classical),30.0,50,36.4972,False,64,0
+Proposed Hybrid (ECC + Kyber),2.0,100,2.9466,True,864,768
+Kyber-512 (Post-Quantum),10.0,20,11.5095,True,800,768
+Kyber-512 (Post-Quantum),5.0,50,5.7238,True,800,768
+Proposed Hybrid (ECC + Kyber),0.5,200,1.3375,True,864,768
+Proposed Hybrid (ECC + Kyber),1.5,10,2.4042,True,864,768
+ECC-256 (Classical),10.0,100,14.0183,False,64,0
+Kyber-512 (Post-Quantum),0.5,20,0.7436,True,800,768
+Proposed Hybrid (ECC + Kyber),20.0,20,23.9865,True,864,768
+Proposed Hybrid (ECC + Kyber),25.0,200,29.9067,True,864,768
+Proposed Hybrid (ECC + Kyber),2.0,200,3.2004,True,864,768
+ECC-256 (Classical),0.04882812,100,2.3368,False,64,0
+Kyber-512 (Post-Quantum),20.0,10,22.4026,True,800,768
+Kyber-512 (Post-Quantum),4.0,50,4.4587,True,800,768
+ECC-256 (Classical),2.0,50,4.7768,False,64,0
+Kyber-512 (Post-Quantum),10.0,10,11.8682,True,800,768
+Proposed Hybrid (ECC + Kyber),1.0,200,1.5162,True,864,768
+ECC-256 (Classical),100.0,200,118.6391,False,64,0
+Kyber-512 (Post-Quantum),4.0,200,4.6078,True,800,768
+Kyber-512 (Post-Quantum),15.0,10,16.6337,True,800,768
+Proposed Hybrid (ECC + Kyber),0.5,20,1.1248,True,864,768
+Proposed Hybrid (ECC + Kyber),4.0,100,5.2072,True,864,768
+ECC-256 (Classical),0.09765625,10,2.3122,False,64,0
+Proposed Hybrid (ECC + Kyber),4.0,50,5.3274,True,864,768
+Kyber-512 (Post-Quantum),100.0,100,113.4081,True,800,768
+Proposed Hybrid (ECC + Kyber),15.0,50,17.5184,True,864,768
+ECC-256 (Classical),10.0,20,13.3956,False,64,0
+Proposed Hybrid (ECC + Kyber),0.00976562,20,0.6725,True,864,768
+ECC-256 (Classical),0.09765625,20,2.5271,False,64,0
+Kyber-512 (Post-Quantum),0.25,10,0.3961,True,800,768
+ECC-256 (Classical),7.5,200,10.9068,False,64,0
+Proposed Hybrid (ECC + Kyber),0.25,50,1.0707,True,864,768
+ECC-256 (Classical),7.5,50,11.242,False,64,0
+Kyber-512 (Post-Quantum),1.5,50,1.7659,True,800,768
+ECC-256 (Classical),0.75,10,3.1014,False,64,0
+Kyber-512 (Post-Quantum),5.0,50,5.3044,True,800,768
+Kyber-512 (Post-Quantum),2.0,200,2.4645,True,800,768
+ECC-256 (Classical),0.5,200,2.7286,False,64,0
+Kyber-512 (Post-Quantum),100.0,200,111.1656,True,800,768
+Kyber-512 (Post-Quantum),25.0,200,28.656,True,800,768
+Kyber-512 (Post-Quantum),1.5,10,1.7229,True,800,768
+Kyber-512 (Post-Quantum),3.0,50,3.4998,True,800,768
+ECC-256 (Classical),0.00976562,200,2.4387,False,64,0
+ECC-256 (Classical),20.0,200,25.1004,False,64,0
+ECC-256 (Classical),20.0,50,24.8158,False,64,0
+Proposed Hybrid (ECC + Kyber),10.0,50,12.4543,True,864,768
+Kyber-512 (Post-Quantum),5.0,20,5.7769,True,800,768
+Kyber-512 (Post-Quantum),30.0,100,33.7506,True,800,768
+Kyber-512 (Post-Quantum),100.0,100,114.7641,True,800,768
+ECC-256 (Classical),1.5,50,3.9123,False,64,0
+Kyber-512 (Post-Quantum),75.0,50,84.5929,True,800,768
+Kyber-512 (Post-Quantum),100.0,200,109.3884,True,800,768
+Kyber-512 (Post-Quantum),0.75,20,1.1544,True,800,768
+Proposed Hybrid (ECC + Kyber),0.25,100,0.7167,True,864,768
+Kyber-512 (Post-Quantum),20.0,20,22.7543,True,800,768
+ECC-256 (Classical),0.00976562,20,2.3424,False,64,0
+ECC-256 (Classical),3.0,50,5.7422,False,64,0
+ECC-256 (Classical),15.0,10,19.6045,False,64,0
+Kyber-512 (Post-Quantum),1.0,50,1.2853,True,800,768
+Kyber-512 (Post-Quantum),3.0,100,3.1737,True,800,768
+ECC-256 (Classical),4.0,10,6.9841,False,64,0
+Kyber-512 (Post-Quantum),0.04882812,50,0.3578,True,800,768
+ECC-256 (Classical),2.0,100,4.688,False,64,0
+Kyber-512 (Post-Quantum),0.25,20,0.4521,True,800,768
+Kyber-512 (Post-Quantum),0.04882812,20,0.12,True,800,768
+Proposed Hybrid (ECC + Kyber),0.25,200,1.1179,True,864,768
+ECC-256 (Classical),3.0,50,5.7253,False,64,0
+Proposed Hybrid (ECC + Kyber),100.0,10,120.499,True,864,768
+Proposed Hybrid (ECC + Kyber),2.0,100,2.9263,True,864,768
+Kyber-512 (Post-Quantum),3.0,20,3.806,True,800,768
+ECC-256 (Classical),1.0,10,3.2361,False,64,0
+Kyber-512 (Post-Quantum),100.0,100,115.0716,True,800,768
+Kyber-512 (Post-Quantum),50.0,10,56.3013,True,800,768
+ECC-256 (Classical),1.5,10,3.7943,False,64,0
+Kyber-512 (Post-Quantum),75.0,20,83.1974,True,800,768
+ECC-256 (Classical),0.09765625,20,2.1818,False,64,0
+ECC-256 (Classical),100.0,10,117.3013,False,64,0
+Proposed Hybrid (ECC + Kyber),5.0,20,6.4455,True,864,768
+Kyber-512 (Post-Quantum),20.0,20,22.5014,True,800,768
+Kyber-512 (Post-Quantum),30.0,50,33.7369,True,800,768
+Proposed Hybrid (ECC + Kyber),7.5,50,9.4458,True,864,768
+ECC-256 (Classical),0.5,50,2.7068,False,64,0
+Proposed Hybrid (ECC + Kyber),3.0,200,4.2093,True,864,768
+Proposed Hybrid (ECC + Kyber),20.0,20,24.4113,True,864,768
+Proposed Hybrid (ECC + Kyber),15.0,50,18.6695,True,864,768
+ECC-256 (Classical),30.0,20,36.157,False,64,0
+Kyber-512 (Post-Quantum),2.0,200,2.3518,True,800,768
+Proposed Hybrid (ECC + Kyber),15.0,10,17.7404,True,864,768
+Kyber-512 (Post-Quantum),0.00976562,200,0.1518,True,800,768
+Proposed Hybrid (ECC + Kyber),1.5,50,2.8357,True,864,768
+Proposed Hybrid (ECC + Kyber),7.5,20,9.7659,True,864,768
+ECC-256 (Classical),20.0,200,24.9989,False,64,0
+ECC-256 (Classical),100.0,50,116.3505,False,64,0
+Proposed Hybrid (ECC + Kyber),0.25,200,1.2117,True,864,768
+ECC-256 (Classical),0.5,20,2.9967,False,64,0
+Kyber-512 (Post-Quantum),1.0,10,1.285,True,800,768
+Proposed Hybrid (ECC + Kyber),100.0,100,119.0417,True,864,768
+Proposed Hybrid (ECC + Kyber),20.0,200,24.1458,True,864,768
+Proposed Hybrid (ECC + Kyber),5.0,20,6.385,True,864,768
+ECC-256 (Classical),0.09765625,10,2.2182,False,64,0
+Kyber-512 (Post-Quantum),15.0,10,16.2355,True,800,768
+Kyber-512 (Post-Quantum),30.0,100,33.8071,True,800,768
+Proposed Hybrid (ECC + Kyber),75.0,50,88.725,True,864,768
+Kyber-512 (Post-Quantum),0.04882812,10,0.2975,True,800,768
+Proposed Hybrid (ECC + Kyber),0.25,20,0.9954,True,864,768
+ECC-256 (Classical),7.5,20,10.7291,False,64,0
+Proposed Hybrid (ECC + Kyber),100.0,20,118.4455,True,864,768
+Proposed Hybrid (ECC + Kyber),30.0,100,36.7247,True,864,768
+Proposed Hybrid (ECC + Kyber),5.0,100,6.7476,True,864,768
+ECC-256 (Classical),10.0,10,13.8999,False,64,0
+Proposed Hybrid (ECC + Kyber),25.0,50,29.51,True,864,768
+Proposed Hybrid (ECC + Kyber),0.75,200,1.3942,True,864,768
+Kyber-512 (Post-Quantum),4.0,200,4.6986,True,800,768
+Proposed Hybrid (ECC + Kyber),5.0,100,6.2219,True,864,768
+Proposed Hybrid (ECC + Kyber),75.0,20,90.0165,True,864,768
+Kyber-512 (Post-Quantum),30.0,20,33.885,True,800,768
+Kyber-512 (Post-Quantum),2.0,50,1.9811,True,800,768
+ECC-256 (Classical),15.0,100,19.3913,False,64,0
+Proposed Hybrid (ECC + Kyber),75.0,10,85.5517,True,864,768
+ECC-256 (Classical),0.5,50,2.8403,False,64,0
+Proposed Hybrid (ECC + Kyber),4.0,10,5.5114,True,864,768
+Proposed Hybrid (ECC + Kyber),2.0,200,2.6248,True,864,768
+ECC-256 (Classical),0.5,10,2.7505,False,64,0
+ECC-256 (Classical),15.0,50,19.7814,False,64,0
+ECC-256 (Classical),50.0,20,60.4578,False,64,0
+ECC-256 (Classical),2.0,50,4.389,False,64,0
+Proposed Hybrid (ECC + Kyber),1.0,10,1.7383,True,864,768
+ECC-256 (Classical),4.0,100,6.4515,False,64,0
+Proposed Hybrid (ECC + Kyber),50.0,10,59.7918,True,864,768
+ECC-256 (Classical),100.0,50,117.0396,False,64,0
+Kyber-512 (Post-Quantum),0.09765625,10,0.0623,True,800,768
+ECC-256 (Classical),10.0,100,13.9471,False,64,0
+ECC-256 (Classical),100.0,200,116.4364,False,64,0
+ECC-256 (Classical),100.0,100,117.1385,False,64,0
+ECC-256 (Classical),30.0,200,36.9638,False,64,0
+Proposed Hybrid (ECC + Kyber),4.0,200,5.3823,True,864,768
+Proposed Hybrid (ECC + Kyber),7.5,100,9.5831,True,864,768
+ECC-256 (Classical),50.0,200,59.9299,False,64,0
+ECC-256 (Classical),7.5,20,11.1388,False,64,0
+Kyber-512 (Post-Quantum),4.0,10,4.5698,True,800,768
+ECC-256 (Classical),7.5,50,10.8888,False,64,0
+Kyber-512 (Post-Quantum),7.5,200,8.5707,True,800,768
+Proposed Hybrid (ECC + Kyber),0.5,100,1.1577,True,864,768
+Kyber-512 (Post-Quantum),1.0,100,1.2072,True,800,768
+ECC-256 (Classical),75.0,200,87.8615,False,64,0
+Kyber-512 (Post-Quantum),1.5,10,1.8555,True,800,768
+ECC-256 (Classical),50.0,10,59.0157,False,64,0
+Kyber-512 (Post-Quantum),10.0,100,11.1972,True,800,768
+Kyber-512 (Post-Quantum),75.0,10,85.0641,True,800,768
+Proposed Hybrid (ECC + Kyber),0.75,50,1.6613,True,864,768
+Kyber-512 (Post-Quantum),75.0,20,82.081,True,800,768
+ECC-256 (Classical),0.04882812,20,2.3215,False,64,0
+Proposed Hybrid (ECC + Kyber),0.09765625,10,3.5821,True,864,768
+ECC-256 (Classical),0.5,50,2.7177,False,64,0
+Kyber-512 (Post-Quantum),3.0,100,3.8034,True,800,768
+ECC-256 (Classical),0.00976562,50,2.3047,False,64,0
+Kyber-512 (Post-Quantum),2.0,200,2.266,True,800,768
+Proposed Hybrid (ECC + Kyber),75.0,20,89.0723,True,864,768
+ECC-256 (Classical),50.0,200,59.6355,False,64,0
+ECC-256 (Classical),2.0,20,4.5326,False,64,0
+ECC-256 (Classical),75.0,50,90.7486,False,64,0
+ECC-256 (Classical),15.0,10,19.3217,False,64,0
+ECC-256 (Classical),5.0,10,8.1653,False,64,0
+ECC-256 (Classical),3.0,100,5.9806,False,64,0
+Kyber-512 (Post-Quantum),0.25,50,0.4068,True,800,768
+ECC-256 (Classical),75.0,200,89.1345,False,64,0
+Proposed Hybrid (ECC + Kyber),15.0,200,18.7571,True,864,768
+ECC-256 (Classical),0.00976562,10,2.4243,False,64,0
+Kyber-512 (Post-Quantum),0.75,10,0.9255,True,800,768
+Proposed Hybrid (ECC + Kyber),5.0,50,6.3086,True,864,768
+ECC-256 (Classical),25.0,50,32.701,False,64,0
+Kyber-512 (Post-Quantum),100.0,50,114.4899,True,800,768
+Kyber-512 (Post-Quantum),0.00976562,200,0.12,True,800,768
+Proposed Hybrid (ECC + Kyber),4.0,100,5.5911,True,864,768
+Proposed Hybrid (ECC + Kyber),25.0,200,30.7951,True,864,768
+ECC-256 (Classical),1.5,100,3.8619,False,64,0
+Kyber-512 (Post-Quantum),3.0,200,3.4191,True,800,768
+ECC-256 (Classical),15.0,200,19.605,False,64,0
+ECC-256 (Classical),30.0,20,37.1157,False,64,0
+ECC-256 (Classical),3.0,200,5.3636,False,64,0
+ECC-256 (Classical),0.5,200,3.0217,False,64,0
+Proposed Hybrid (ECC + Kyber),4.0,10,5.0423,True,864,768
+ECC-256 (Classical),0.75,50,3.1096,False,64,0
+Kyber-512 (Post-Quantum),0.00976562,50,0.2848,True,800,768
+ECC-256 (Classical),100.0,50,116.9613,False,64,0
+ECC-256 (Classical),1.0,10,3.5615,False,64,0
+Kyber-512 (Post-Quantum),75.0,200,86.1326,True,800,768
+Proposed Hybrid (ECC + Kyber),75.0,200,89.2609,True,864,768
+ECC-256 (Classical),0.00976562,50,2.4196,False,64,0
+Proposed Hybrid (ECC + Kyber),20.0,20,24.5375,True,864,768
+ECC-256 (Classical),100.0,50,115.7726,False,64,0
+Kyber-512 (Post-Quantum),7.5,100,8.6617,True,800,768
+ECC-256 (Classical),0.04882812,100,2.4313,False,64,0
+Proposed Hybrid (ECC + Kyber),10.0,20,12.3542,True,864,768
+ECC-256 (Classical),1.0,10,3.3522,False,64,0
+Kyber-512 (Post-Quantum),15.0,200,16.6634,True,800,768
+Kyber-512 (Post-Quantum),1.5,100,1.5097,True,800,768
+Proposed Hybrid (ECC + Kyber),0.04882812,200,0.8159,True,864,768
+Proposed Hybrid (ECC + Kyber),50.0,200,58.3674,True,864,768
+Proposed Hybrid (ECC + Kyber),25.0,10,30.5986,True,864,768
+Proposed Hybrid (ECC + Kyber),0.04882812,20,0.8132,True,864,768
+Kyber-512 (Post-Quantum),0.04882812,200,1.5754,True,800,768
+Kyber-512 (Post-Quantum),7.5,50,8.5125,True,800,768
+Kyber-512 (Post-Quantum),15.0,20,16.7184,True,800,768
+Kyber-512 (Post-Quantum),25.0,20,29.2816,True,800,768
+ECC-256 (Classical),100.0,100,117.1617,False,64,0
+ECC-256 (Classical),50.0,200,59.3654,False,64,0
+Kyber-512 (Post-Quantum),7.5,100,8.393,True,800,768
+Kyber-512 (Post-Quantum),50.0,20,56.3216,True,800,768
+Kyber-512 (Post-Quantum),0.09765625,50,0.1411,True,800,768
+ECC-256 (Classical),0.25,10,2.2745,False,64,0
+ECC-256 (Classical),15.0,50,19.1849,False,64,0
+ECC-256 (Classical),25.0,200,30.9729,False,64,0
+Kyber-512 (Post-Quantum),7.5,200,8.7046,True,800,768
+Proposed Hybrid (ECC + Kyber),4.0,200,5.405,True,864,768
+ECC-256 (Classical),0.5,20,2.9824,False,64,0
+Kyber-512 (Post-Quantum),10.0,50,11.7769,True,800,768
+Proposed Hybrid (ECC + Kyber),15.0,50,18.6884,True,864,768
+Proposed Hybrid (ECC + Kyber),1.0,10,2.15,True,864,768
+Kyber-512 (Post-Quantum),2.0,10,2.1785,True,800,768
+Kyber-512 (Post-Quantum),0.00976562,200,0.1636,True,800,768
+Kyber-512 (Post-Quantum),50.0,100,55.8407,True,800,768
+ECC-256 (Classical),75.0,10,88.8275,False,64,0
+Proposed Hybrid (ECC + Kyber),30.0,50,35.2823,True,864,768
+ECC-256 (Classical),1.0,10,3.229,False,64,0
+Proposed Hybrid (ECC + Kyber),0.5,10,1.1885,True,864,768
+Proposed Hybrid (ECC + Kyber),0.04882812,200,0.7763,True,864,768
+ECC-256 (Classical),0.09765625,10,2.33,False,64,0
+Proposed Hybrid (ECC + Kyber),75.0,200,89.5482,True,864,768
+Kyber-512 (Post-Quantum),30.0,20,33.7476,True,800,768
+Kyber-512 (Post-Quantum),0.04882812,10,0.0622,True,800,768
+Kyber-512 (Post-Quantum),7.5,10,8.6032,True,800,768
+ECC-256 (Classical),20.0,20,25.1626,False,64,0
+Proposed Hybrid (ECC + Kyber),2.0,50,2.9042,True,864,768
+ECC-256 (Classical),1.0,200,3.5084,False,64,0
+Proposed Hybrid (ECC + Kyber),0.25,200,1.1321,True,864,768
+Proposed Hybrid (ECC + Kyber),0.09765625,100,0.7412,True,864,768
+Proposed Hybrid (ECC + Kyber),3.0,100,4.2772,True,864,768
+Kyber-512 (Post-Quantum),50.0,200,55.5798,True,800,768
+Proposed Hybrid (ECC + Kyber),0.5,200,0.9855,True,864,768
+ECC-256 (Classical),20.0,100,25.3165,False,64,0
+Proposed Hybrid (ECC + Kyber),75.0,20,88.9395,True,864,768
+Kyber-512 (Post-Quantum),0.25,10,0.5276,True,800,768
+Proposed Hybrid (ECC + Kyber),100.0,10,120.3597,True,864,768
+ECC-256 (Classical),10.0,100,13.361,False,64,0
+Proposed Hybrid (ECC + Kyber),4.0,50,5.42,True,864,768
+Proposed Hybrid (ECC + Kyber),100.0,20,117.5799,True,864,768
+ECC-256 (Classical),3.0,50,5.6677,False,64,0
+ECC-256 (Classical),4.0,10,7.1334,False,64,0
+Kyber-512 (Post-Quantum),4.0,50,4.5835,True,800,768
+ECC-256 (Classical),0.00976562,20,2.1062,False,64,0
+Kyber-512 (Post-Quantum),4.0,100,4.7185,True,800,768

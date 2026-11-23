@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration sensitivity="medium">
+    <storage_engine>
+        <max_shard_size_mb>100</max_shard_size_mb>
+        <replication_factor>3</replication_factor>
+    </storage_engine>
+    <cryptography>
+        <default_pq_algorithm>CRYSTALS-Kyber512</default_pq_algorithm>
+        <classical_fallback>ECC-SECP256R1</classical_fallback>
+    </cryptography>
+</configuration>
