@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Exhaustive Automated Verification Suite
-Validates correspondence with all 7 Algorithms, 14 Figures, and 14 Tables
-in the Springer Q1 Journal Paper.
+Validates core cryptographic operations, secret sharing, and security engine.
 """
 
 import unittest

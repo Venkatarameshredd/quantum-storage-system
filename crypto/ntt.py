@@ -39,7 +39,7 @@ def ntt_forward(a):
     """
     Algorithm 7: Vectorized NTT Modular Butterfly Reduction over R_q.
     Transforms polynomial coefficients a in Z_q^{256} into the NTT domain.
-    Matches lines 1-13 of Algorithm 7 in the Springer Q1 Journal Paper.
+    Implements vectorized Cooley-Tukey butterfly reduction.
     """
     a = list(a)
     assert len(a) == KYBER_N, f"Input must have {KYBER_N} coefficients"

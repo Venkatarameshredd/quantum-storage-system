@@ -42,8 +42,7 @@ class AdaptiveEngine:
 
     def evaluate_risk_model(self, x1_threat=0.1, x2_health=0.1, x3_sensitivity=0.4, x4_horizon=0.2, weights=None, theta1=0.35, theta2=0.70):
         """
-        Closed-loop operational evaluation of the Adaptive Encryption Decision Engine (AEDE)
-        corresponding to Section 3.3, Equation (1), and Figure 3 of the journal paper:
+        Closed-loop operational evaluation of the Adaptive Encryption Decision Engine (AEDE):
         R = sum_{i=1}^4 w_i * x_i
         Profiles:
           - LOW (R < theta1): NIST Level 1 Classical ECC-256 + (2,3) Shamir over GF(257)
