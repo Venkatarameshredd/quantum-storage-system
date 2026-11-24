@@ -10,6 +10,16 @@ __pycache__/
 venv/
 ENV/
 
+# Runtime Storage, Uploads & Databases
+local_storage/
+*.db
+*.db-journal
+
+# Temporary archives & test packages
+*.zip
+*.tar.gz
+*.log
+
 # Scratch & Temporary Build Directories
 scratch/
 scratch_build_artifacts/
@@ -20,9 +30,6 @@ scratch_*.py
 # Intermediate test output artifacts
 test_*.docx
 test_*.pdf
-
-# Databases journal / temporary files
-*.db-journal
 
 # OS / Editor specific files
 .DS_Store
